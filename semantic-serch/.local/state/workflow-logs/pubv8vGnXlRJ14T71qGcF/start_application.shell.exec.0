@@ -1,0 +1,45 @@
+[0m[0m
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+[32m :: Spring Boot :: [39m              [2m (v4.0.5)[0;39m
+
+[2m2026-05-03T16:29:47.765Z[0;39m [32m INFO[0;39m [35m131[0;39m [2m--- [           main] [0;39m[36mcom.example.demo.DemoApplication        [0;39m [2m:[0;39m Starting DemoApplication v0.0.1-SNAPSHOT using Java 21.0.7 with PID 131 (/home/runner/workspace/target/demo-0.0.1-SNAPSHOT.jar started by runner in /home/runner/workspace)
+[2m2026-05-03T16:29:47.767Z[0;39m [32m INFO[0;39m [35m131[0;39m [2m--- [           main] [0;39m[36mcom.example.demo.DemoApplication        [0;39m [2m:[0;39m No active profile set, falling back to 1 default profile: "default"
+[2m2026-05-03T16:29:48.744Z[0;39m [32m INFO[0;39m [35m131[0;39m [2m--- [           main] [0;39m[36mo.s.boot.tomcat.TomcatWebServer         [0;39m [2m:[0;39m Tomcat initialized with port 5000 (http)
+[2m2026-05-03T16:29:48.764Z[0;39m [32m INFO[0;39m [35m131[0;39m [2m--- [           main] [0;39m[36mo.apache.catalina.core.StandardService  [0;39m [2m:[0;39m Starting service [Tomcat]
+[2m2026-05-03T16:29:48.765Z[0;39m [32m INFO[0;39m [35m131[0;39m [2m--- [           main] [0;39m[36mo.apache.catalina.core.StandardEngine   [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/11.0.20]
+[2m2026-05-03T16:29:48.791Z[0;39m [32m INFO[0;39m [35m131[0;39m [2m--- [           main] [0;39m[36mb.w.c.s.WebApplicationContextInitializer[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 983 ms
+[2m2026-05-03T16:29:49.136Z[0;39m [32m INFO[0;39m [35m131[0;39m [2m--- [           main] [0;39m[36mo.s.a.transformers.ResourceCacheService [0;39m [2m:[0;39m Create cache root directory: /tmp/spring-ai-onnx-generative
+[2m2026-05-03T16:29:50.007Z[0;39m [32m INFO[0;39m [35m131[0;39m [2m--- [           main] [0;39m[36mo.s.a.transformers.ResourceCacheService [0;39m [2m:[0;39m Caching the URL [https://raw.githubusercontent.com/spring-projects/spring-ai/main/models/spring-ai-transformers/src/main/resources/onnx/all-MiniLM-L6-v2/tokenizer.json] resource to: /tmp/spring-ai-onnx-generative/4d42ba07-cb22-352f-bb44-beccc8c8c0b7/tokenizer.json
+[2m2026-05-03T16:29:50.105Z[0;39m [32m INFO[0;39m [35m131[0;39m [2m--- [           main] [0;39m[36mai.djl.util.Platform                    [0;39m [2m:[0;39m Found matching platform from: jar:nested:/home/runner/workspace/target/demo-0.0.1-SNAPSHOT.jar/!BOOT-INF/lib/tokenizers-0.32.0.jar!/native/lib/tokenizers.properties
+[2m2026-05-03T16:29:50.107Z[0;39m [32m INFO[0;39m [35m131[0;39m [2m--- [           main] [0;39m[36ma.d.huggingface.tokenizers.jni.LibUtils [0;39m [2m:[0;39m Extracting native/lib/linux-x86_64/cpu/libtokenizers.so to cache ...
+[2m2026-05-03T16:29:56.956Z[0;39m [32m INFO[0;39m [35m131[0;39m [2m--- [           main] [0;39m[36mo.s.a.transformers.ResourceCacheService [0;39m [2m:[0;39m Caching the URL [https://media.githubusercontent.com/media/spring-projects/spring-ai/refs/heads/main/models/spring-ai-transformers/src/main/resources/onnx/all-MiniLM-L6-v2/model.onnx] resource to: /tmp/spring-ai-onnx-generative/d5769837-23ea-3f7c-a3e3-ded3412df4f4/model.onnx
+[2m2026-05-03T16:29:57.373Z[0;39m [32m INFO[0;39m [35m131[0;39m [2m--- [           main] [0;39m[36mo.s.a.t.TransformersEmbeddingModel      [0;39m [2m:[0;39m Model input names: input_ids, attention_mask, token_type_ids
+[2m2026-05-03T16:29:57.374Z[0;39m [32m INFO[0;39m [35m131[0;39m [2m--- [           main] [0;39m[36mo.s.a.t.TransformersEmbeddingModel      [0;39m [2m:[0;39m Model output names: last_hidden_state
+[2m2026-05-03T16:29:58.632Z[0;39m [32m INFO[0;39m [35m131[0;39m [2m--- [           main] [0;39m[36mo.s.b.w.a.WelcomePageHandlerMapping     [0;39m [2m:[0;39m Adding welcome page: class path resource [static/index.html]
+[2m2026-05-03T16:29:58.991Z[0;39m [32m INFO[0;39m [35m131[0;39m [2m--- [           main] [0;39m[36mo.s.boot.tomcat.TomcatWebServer         [0;39m [2m:[0;39m Tomcat started on port 5000 (http) with context path '/'
+[2m2026-05-03T16:29:59.033Z[0;39m [32m INFO[0;39m [35m131[0;39m [2m--- [           main] [0;39m[36mcom.example.demo.DemoApplication        [0;39m [2m:[0;39m Started DemoApplication in 11.66 seconds (process running for 12.21)
+[2m2026-05-03T16:29:59.493Z[0;39m [32m INFO[0;39m [35m131[0;39m [2m--- [0.0-5000-exec-1] [0;39m[36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2m2026-05-03T16:29:59.493Z[0;39m [32m INFO[0;39m [35m131[0;39m [2m--- [0.0-5000-exec-1] [0;39m[36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
+[2m2026-05-03T16:29:59.494Z[0;39m [32m INFO[0;39m [35m131[0;39m [2m--- [0.0-5000-exec-1] [0;39m[36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 1 ms
+[2m2026-05-03T16:38:07.693Z[0;39m [32m INFO[0;39m [35m131[0;39m [2m--- [0.0-5000-exec-3] [0;39m[36mc.e.demo.controller.SearchController    [0;39m [2m:[0;39m Received ask request
+[2m2026-05-03T16:38:07.693Z[0;39m [32m INFO[0;39m [35m131[0;39m [2m--- [0.0-5000-exec-3] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Top-3 search for query: who is danish
+[2m2026-05-03T16:38:07.766Z[0;39m [32m INFO[0;39m [35m131[0;39m [2m--- [0.0-5000-exec-3] [0;39m[36mai.djl.pytorch.jni.LibUtils             [0;39m [2m:[0;39m Downloading https://publish.djl.ai/pytorch/2.5.1/cpu/linux-x86_64/native/lib/libc10.so.gz ...
+[2m2026-05-03T16:38:07.793Z[0;39m [32m INFO[0;39m [35m131[0;39m [2m--- [0.0-5000-exec-3] [0;39m[36mai.djl.pytorch.jni.LibUtils             [0;39m [2m:[0;39m Downloading https://publish.djl.ai/pytorch/2.5.1/cpu/linux-x86_64/native/lib/libtorch_cpu.so.gz ...
+[2m2026-05-03T16:38:11.375Z[0;39m [32m INFO[0;39m [35m131[0;39m [2m--- [0.0-5000-exec-3] [0;39m[36mai.djl.pytorch.jni.LibUtils             [0;39m [2m:[0;39m Downloading https://publish.djl.ai/pytorch/2.5.1/cpu/linux-x86_64/native/lib/libgomp-98b21ff3.so.1.gz ...
+[2m2026-05-03T16:38:11.388Z[0;39m [32m INFO[0;39m [35m131[0;39m [2m--- [0.0-5000-exec-3] [0;39m[36mai.djl.pytorch.jni.LibUtils             [0;39m [2m:[0;39m Downloading https://publish.djl.ai/pytorch/2.5.1/cpu/linux-x86_64/native/lib/libtorch.so.gz ...
+[2m2026-05-03T16:38:11.752Z[0;39m [32m INFO[0;39m [35m131[0;39m [2m--- [0.0-5000-exec-3] [0;39m[36mai.djl.pytorch.jni.LibUtils             [0;39m [2m:[0;39m Downloading jni https://publish.djl.ai/pytorch/2.5.1/jnilib/0.32.0/linux-x86_64/cpu/libdjl_torch.so to cache ...
+[2m2026-05-03T16:38:11.883Z[0;39m [32m INFO[0;39m [35m131[0;39m [2m--- [0.0-5000-exec-3] [0;39m[36mai.djl.pytorch.engine.PtEngine          [0;39m [2m:[0;39m PyTorch graph executor optimizer is enabled, this may impact your inference latency and throughput. See: https://docs.djl.ai/master/docs/development/inference_performance_optimization.html#graph-executor-optimization
+[2m2026-05-03T16:38:11.885Z[0;39m [32m INFO[0;39m [35m131[0;39m [2m--- [0.0-5000-exec-3] [0;39m[36mai.djl.pytorch.engine.PtEngine          [0;39m [2m:[0;39m Number of inter-op threads is 4
+[2m2026-05-03T16:38:11.885Z[0;39m [32m INFO[0;39m [35m131[0;39m [2m--- [0.0-5000-exec-3] [0;39m[36mai.djl.pytorch.engine.PtEngine          [0;39m [2m:[0;39m Number of intra-op threads is 4
+[2m2026-05-03T16:39:01.392Z[0;39m [32m INFO[0;39m [35m131[0;39m [2m--- [0.0-5000-exec-4] [0;39m[36mc.e.demo.controller.SearchController    [0;39m [2m:[0;39m Received ask request
+[2m2026-05-03T16:39:01.392Z[0;39m [32m INFO[0;39m [35m131[0;39m [2m--- [0.0-5000-exec-4] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Top-3 search for query: who is danish father
+[2m2026-05-03T16:39:15.118Z[0;39m [32m INFO[0;39m [35m131[0;39m [2m--- [0.0-5000-exec-5] [0;39m[36mc.e.demo.controller.SearchController    [0;39m [2m:[0;39m Received ask request
+[2m2026-05-03T16:39:15.118Z[0;39m [32m INFO[0;39m [35m131[0;39m [2m--- [0.0-5000-exec-5] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Top-3 search for query: who is mahmood ahmad
+[2m2026-05-03T16:39:32.859Z[0;39m [32m INFO[0;39m [35m131[0;39m [2m--- [0.0-5000-exec-6] [0;39m[36mc.e.demo.controller.SearchController    [0;39m [2m:[0;39m Received ask request
+[2m2026-05-03T16:39:32.860Z[0;39m [32m INFO[0;39m [35m131[0;39m [2m--- [0.0-5000-exec-6] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Top-3 search for query: why use java

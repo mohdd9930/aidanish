@@ -1,0 +1,40 @@
+[nix]
+channel = "stable-25_05"
+
+[agent]
+expertMode = true
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Start application"
+
+[[workflows.workflow]]
+name = "Start application"
+author = "agent"
+
+[workflows.workflow.metadata]
+outputType = "webview"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "mvn -q -DskipTests package && java -jar target/demo-0.0.1-SNAPSHOT.jar"
+waitForPort = 5000
+
+[[ports]]
+localPort = 5000
+externalPort = 80
+
+[userenv]
+
+[userenv.shared]
+PINECONE_API_KEY = "pcsk_7SNh5N_PPMafBWRgpFFXwZE1T7inAfTe7roa6g5qGv8PQ8AtXirb8rfGP3yBiqGZTzsdTC"
+GEMINI_API_KEY = "AIzaSyBE1uAEtZyAT-p89ukvPaFD8TtJ7XrpFyQ"
+PINECONE_INDEX_URL = "https://semantic-384-1dsfvg7.svc.aped-4627-b74a.pinecone.io"

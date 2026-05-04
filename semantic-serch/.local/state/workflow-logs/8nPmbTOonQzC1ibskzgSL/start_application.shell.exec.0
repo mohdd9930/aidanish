@@ -1,0 +1,5216 @@
+[0m[0m
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+[32m :: Spring Boot :: [39m              [2m (v4.0.5)[0;39m
+
+[2m2026-05-03T08:30:06.883Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [           main] [0;39m[36mcom.example.demo.DemoApplication        [0;39m [2m:[0;39m Starting DemoApplication v0.0.1-SNAPSHOT using Java 21.0.7 with PID 5589 (/home/runner/workspace/target/demo-0.0.1-SNAPSHOT.jar started by runner in /home/runner/workspace)
+[2m2026-05-03T08:30:06.888Z[0;39m [32mDEBUG[0;39m [35m5589[0;39m [2m--- [semantic-search] [           main] [0;39m[36mcom.example.demo.DemoApplication        [0;39m [2m:[0;39m Running with Spring Boot v4.0.5, Spring v7.0.6
+[2m2026-05-03T08:30:06.889Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [           main] [0;39m[36mcom.example.demo.DemoApplication        [0;39m [2m:[0;39m No active profile set, falling back to 1 default profile: "default"
+[2m2026-05-03T08:30:07.719Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [           main] [0;39m[36mo.s.boot.tomcat.TomcatWebServer         [0;39m [2m:[0;39m Tomcat initialized with port 5000 (http)
+[2m2026-05-03T08:30:07.733Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [           main] [0;39m[36mo.apache.catalina.core.StandardService  [0;39m [2m:[0;39m Starting service [Tomcat]
+[2m2026-05-03T08:30:07.734Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [           main] [0;39m[36mo.apache.catalina.core.StandardEngine   [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/11.0.20]
+[2m2026-05-03T08:30:07.758Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [           main] [0;39m[36mb.w.c.s.WebApplicationContextInitializer[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 817 ms
+[2m2026-05-03T08:30:08.217Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [           main] [0;39m[36mai.djl.util.Platform                    [0;39m [2m:[0;39m Found matching platform from: jar:nested:/home/runner/workspace/target/demo-0.0.1-SNAPSHOT.jar/!BOOT-INF/lib/tokenizers-0.32.0.jar!/native/lib/tokenizers.properties
+[2m2026-05-03T08:30:08.658Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [           main] [0;39m[36mo.s.a.t.TransformersEmbeddingModel      [0;39m [2m:[0;39m Model input names: input_ids, attention_mask, token_type_ids
+[2m2026-05-03T08:30:08.658Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [           main] [0;39m[36mo.s.a.t.TransformersEmbeddingModel      [0;39m [2m:[0;39m Model output names: last_hidden_state
+[2m2026-05-03T08:30:08.698Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [           main] [0;39m[36mo.s.b.w.a.WelcomePageHandlerMapping     [0;39m [2m:[0;39m Adding welcome page: class path resource [static/index.html]
+[2m2026-05-03T08:30:09.081Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [           main] [0;39m[36mo.s.boot.tomcat.TomcatWebServer         [0;39m [2m:[0;39m Tomcat started on port 5000 (http) with context path '/'
+[2m2026-05-03T08:30:09.105Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [           main] [0;39m[36mcom.example.demo.DemoApplication        [0;39m [2m:[0;39m Started DemoApplication in 2.576 seconds (process running for 3.069)
+[2m2026-05-03T08:30:09.545Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [0.0-5000-exec-1] [0;39m[36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2m2026-05-03T08:30:09.546Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [0.0-5000-exec-1] [0;39m[36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
+[2m2026-05-03T08:30:09.547Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [0.0-5000-exec-1] [0;39m[36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 1 ms
+[2m2026-05-03T08:30:18.766Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [0.0-5000-exec-5] [0;39m[36mc.e.demo.controller.SearchController    [0;39m [2m:[0;39m Received ask request
+[2m2026-05-03T08:30:18.767Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [0.0-5000-exec-5] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Top-3 search for query: What framework helps build Java apps?
+[2m2026-05-03T08:30:19.146Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [0.0-5000-exec-5] [0;39m[36mai.djl.pytorch.engine.PtEngine          [0;39m [2m:[0;39m PyTorch graph executor optimizer is enabled, this may impact your inference latency and throughput. See: https://docs.djl.ai/master/docs/development/inference_performance_optimization.html#graph-executor-optimization
+[2m2026-05-03T08:30:19.147Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [0.0-5000-exec-5] [0;39m[36mai.djl.pytorch.engine.PtEngine          [0;39m [2m:[0;39m Number of inter-op threads is 4
+[2m2026-05-03T08:30:19.147Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [0.0-5000-exec-5] [0;39m[36mai.djl.pytorch.engine.PtEngine          [0;39m [2m:[0;39m Number of intra-op threads is 4
+[2m2026-05-03T08:30:19.166Z[0;39m [32mDEBUG[0;39m [35m5589[0;39m [2m--- [semantic-search] [0.0-5000-exec-5] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Generated embedding with dimension: 384
+[2m2026-05-03T08:30:21.896Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [0.0-5000-exec-8] [0;39m[36mc.e.demo.controller.SearchController    [0;39m [2m:[0;39m Received ask request
+[2m2026-05-03T08:30:21.897Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [0.0-5000-exec-8] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Top-3 search for query: what is document db
+[2m2026-05-03T08:30:21.900Z[0;39m [32mDEBUG[0;39m [35m5589[0;39m [2m--- [semantic-search] [0.0-5000-exec-8] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Generated embedding with dimension: 384
+[2m2026-05-03T08:30:21.911Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [0.0-5000-exec-3] [0;39m[36mc.e.demo.controller.SearchController    [0;39m [2m:[0;39m Received ask request
+[2m2026-05-03T08:30:21.911Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [0.0-5000-exec-3] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Top-3 search for query: What can I use to store vectors?
+[2m2026-05-03T08:30:21.915Z[0;39m [32mDEBUG[0;39m [35m5589[0;39m [2m--- [semantic-search] [0.0-5000-exec-3] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Generated embedding with dimension: 384
+[2m2026-05-03T08:30:43.959Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [0.0-5000-exec-9] [0;39m[36mc.e.demo.controller.SearchController    [0;39m [2m:[0;39m Received request to add document
+[2m2026-05-03T08:30:43.959Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [0.0-5000-exec-9] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Adding document with text: Page 1
+ Page No
+1. INTRODUCTION OF JAVA ««««««««««««««««««««««««1
+1.1.1. Platform independent
+1.1.2. Open source
+1.1.3. Multi-threading
+1.1.4. More secure
+1.1.5. portable
+2. CORE JAVA TOPICS ««««««««««««««««««««««««««...4
+2.1.1. Oops concept
+2.1.2. Control statement and looping
+2.1.3. Arrays
+2.1.4. String
+2.1.5. Collections
+2.1.6. Exceptions
+2.1.7. Constructor
+3. IN7ROD8C7ION OF OOPS ««««««««««««««««««««««««6
+3.1.1. Class
+3.1.2. Object
+3.1.3. Method
+3.1.4. Encapsulation
+3.1.5. Inheritance
+3.1.6. Polymorphism
+3.1.7. Abstraction
+4. ENCAPS8LA7ION «««««««««««««««««««««««««««... 7
+5. INHERI7ANCE «««««««««««««««««««««««««««««. 7
+5.1.1. Single inheritance
+5.1.2. Multilevel inheritance
+5.1.3. Multiple inheritance
+5.1.4. Hybrid inheritance
+5.1.5. Hierarchical inheritance
+6. ACCESS SPECIFIER ««««««««««««««««««««««««««.. 9
+6.1.1. Public
+6.1.2. Private
+6.1.3. Protected
+6.1.4. Default
+7. DA7A 7<PES AND :RAPPER CLASS «««««««««««««««««... 10
+7.1.1. Data types
+7.1.2. Wrapper class
+
+Page 2
+8. CONTROL STATEMENT ««««««««««««««««««««««««12
+8.1.1. If
+8.1.2. If-else
+8.1.3. If-else-if
+9. LOOPING «««««««««««««««««««««««««««««««13
+9.1.1. For
+9.1.2. While
+9.1.3. Do-while
+10. POL<MORPHISM««««««««««««««««««««««««««««17
+10.1.1. Method overloading
+10.1.2. Method overriding
+11. ABS7RAC7ION««««««««««««««««««««««««««««...20
+11.1.1. Abstract class
+11.1.2. Interface
+12. ARRA<S««««««««««««««««««««««««««««««««22
+13. S7RING««««««««««««««««««««««««««««««««..25
+13.1.1. String functions
+13.1.2. Literal string
+13.1.3. Non-literal string
+13.1.4. Mutable string
+13.1.5. Immutable string
+14. COLLEC7IONS«««««««««««««««««««««««««««««26
+14.1.1. List
+14.1.2. Set
+14.1.3. Map
+15. E;CEP7ION««««««««««««««««««««««««««««««59
+15.1.1. Unchecked exception
+15.1.2. Checked exception
+15.1.3. Exception handling
+16. CONSTRUCTOR««««««««««««««««««««««««««««73
+17. CORE JA9A IN7ER9IE: Q8ES7IONS AND ANS:ERS««««««««««.79
+18. CORE JA9A IN7ER9IE: PROGRAMS «««««««««««««««««...92
+19. JDBC CONNECTIONS «««««««««««««««««««««««««..98
+
+Page 3
+JAVA INTRODUCTION
+¾ Java is a simple programing language
+¾ Writing, compilation and debugging a program is very easy in java
+¾ It helps to create reusable code
+¾ Java has more features,
+1. Platform independent
+2. Open source
+3. Multithreading
+4. More secure
+5. Portable
+1. Platform independent
+¾ During the compilation the java program converts into byte code
+¾ Using byte code we can run the application to any platform such as windows, mac, linux, etc
+2. Open source:
+¾ A program in which source code is available to the general public for use and/or modification
+from its original design at free of cost is called open source
+3. Multithreading:
+¾ Java supports multithreading
+¾ It enables a program to perform several task simultaneously
+4. More secure:
+¾ It provides the virtual firewall between the application and the computer
+¾ So it¶s doesn't grant unauthorized access
+5. Portable:
+¾ "Write once run anywhere"
+¾ Java code written in one machine can run on another machine
+1. CORE JAVA
+Syllabus:
+1. Oops concept
+2. Control statement/looping
+3. Arrays
+4. String
+5. Exceptions
+6. Collections
+
+Page 4
+Terminology:
+1. JDK
+2. JRE
+3. JVM
+JDK:
+¾ Java Development Kit
+¾ If run any applications we need JDK have to installed
+¾ JDK versions: 1.0 to 1.9
+¾ Mostly V1.8 is used now
+JRE:
+¾ Java Runtime Environment
+¾ It is a pre-defined. class files (i.e.) library files
+JVM:
+¾ Java Virtual Machine
+¾ It is mainly used to allocate the memory and compiling
+TOOLS:
+1. Notepad
+2. Net bean
+3. Eclipse
+4. J Developer-oracle
+5. RAD-IBM
+¾ Nowadays we mostly used eclipse (75% of the people using).
+¾ Versions of eclipse:
+x Juno
+x Kepler
+x Luna
+x Mars
+x Neon
+OOPS CONCEPT:
+¾ Object Oriented Programing Structure
+¾ OOPS is a method of implementation in which programs are organized as collection of objects, class
+and methods
+
+Page 5
+Oops principles are
+1. Class
+2. Method
+3. Object
+4. Abstraction
+5. Encapsulation
+6. Inheritance
+7. Polymorphism
+CLASS:
+¾ Class is nothing but collection of methods or collection of objects.
+x Project name : Should be in Pascal notation
+x Pascal notation : Each word of the first letter should be in capital
+x src - Source file
+x Class name: Pascal notation
+x Package creation: ex, org.cts.scope-All small letters
+Syntax:
+(First type class name and click ctrl +space)
+public class Bank {
+} // Bank is a class name
+Public-Access specifier
+METHOD:
+¾ Set of action to be performed
+Method name: camel notation
+Camel notation: First word should be small after every word of the first letter should be capital
+Syntax:
+public void dummy() {
+// Here dummy is a method name
+ }
+Main Method:
+public static void main(String[] args) {
+}
+Main methodÆ type main and click ctrl +space
+
+Page 6
+OBJECT:
+¾ Run time memory allocation
+¾ Using object we call the any methods
+Syntax:
+(Class name) (Object name) =new (Class name) ();
+¾ AlignmentÆ ctrl + shift+ F
+¾ Run Æ ctrl +F11
+Example program:
+1. StudentDatabase
+public class StudentInfo {
+public void Studentname() {
+System.out.println("Name:Vengat");
+}
+public void studentList() {
+System.out.println();
+}
+public void StudentMark() {
+System.out.println("Mark:1005");
+}
+public void StudentAddress() {
+System.out.println("Address: Chennai");
+}
+public static void main(String[] arg) {
+StudentInfo info = new StudentInfo();
+info.Studentname();
+info.StudentMark();
+info.StudentAddress();
+}
+}
+2.ECommerce
+public class OnlineShoppingSite {
+public void myAccount() {
+System.out.println("Account Name");
+}
+public void catalog() {
+System.out.println("My cat");
+}
+public void orders() {
+
+Page 7
+System.out.println("My Orders");
+}
+public void myWishList() {
+System.out.println("MY Wish List");
+}
+public static void main(String[] args) {
+OnlineShoppingSite info = new OnlineShoppingSite();
+info.catalog();
+info.myAccount();
+info.orders();
+info.myWishList();
+}
+}
+Heap Memory:
+¾ Object are stored in heap memory
+RAMÆ JVMÆ Heap memory
+¾ To reduce object memory we go for inheritance
+ENCAPSULATION
+¾ Structure of creating folders
+INHERITANCE:
+¾ We can access one class property into another class using 'extend' keyword and reusuable
+purpose
+Child classÆ Sub class
+Parent classÆ Super class
+Types:
+1. Single Inheritance
+2. Multilevel Inheritance
+3. Multiple Inheritances
+4. Hybrid Inheritance
+5. Hierarchical Inheritance
+
+Page 8
+1. Single Inheritance :
+¾ One parent class is directly support into one child class using extend keyword
+
+
+2. Multilevel Inheritance:
+¾ One child class and more than one parent class
+3. Multiple Inheritance:
+¾ More than one parent class parallely support into one child class but it won't suport in java
+because
+1. Priority problem
+2. Compilation error/syntax error
+ (i.e) if both parent class having same method name it will get priority problem so it doesn;t work in java
+ Parent classÆ child class Å parent class
+test () test()
+¾ test () is a method name, it present in both parent class, so its get priority problem
+Child Class Parent class
+Child Class Parent Class Grand parent
+Parent class Child class Parent class
+
+Page 9
+4.Hybrid Inheritance:
+¾ It is a combination of single and multiple inheritance
+
+5. Hierarchical Inheritance:
+¾ One parent class and more than one child class
+ACCESS SPECIFIER:
+1. Public
+2. Protected
+3. Default
+4. Private
+1. Public:
+¾ It is global level access( same package + different package)
+Class A
+Class B Class C
+Class D
+Child Class Child Class
+Parent Class
+Child Class
+
+Page
+10
+2. Private:
+¾ It is a class level access
+3. Default:
+¾ Package level access
+¾ Without access specifier within the package we can access
+Ex,
+Public staticÆ public- access specifier (need to mention public)
+Private staticÆ private- access specifier (need to mention)
+StaticÆ default- access specifier (need not to mention default)
+4. Protected:
+ Inside package + outside Package (Extends)
+DATA TYPES:
+Data types Size Wrapper Class Default value
+byte 1 Byte 0
+short 2 Short 0
+int 4 Integer 0
+long 8 Long 0
+float 4 Float 0.0
+double 8 Double 0.0
+boolean - Boolean false
+char - Character -
+String - String null
+¾ To find range: formula
+-2^n-1 to +2^n-1 - 1
+For byte,
+1 byte =8 bits
+So n=8
+
+Page
+11
+Apply
+-128 to + 127
+This is a byte range
+Ex:
+public class ByteInfo {
+public static void main(String[] args) {
+byte num=12;
+System.out.println(num);
+}
+}
+Long:
+symbol 'l'
+long n= 123467l( need to enter l finally)
+Float
+Symbol-µf¶
+float f=10.06f
+Double:
+No need to enter d
+char:
+Character is any number, any alphabet or any special character
+char= 'A'Æsingle quotation
+String:
+String = "klaou8778k"Æ double quotation
+Boolean:
+Boolean is a true or false value
+boolean b1=true;
+boolean b2=false;
+Default package of java:
+¾ java.lang
+
+Page
+12
+¾ ctrl+2Æ+LÆ this shortcut is used to find the data type
+Syntax: to get the values from the user
+x byteÆnextByte();
+x shortÆnextShort();
+x intÆnextInt();
+x longÆnextLong();
+x floatÆnextFloat();
+x doubleÆnextDouble();
+x charÆnext().charAt(0);
+x StringÆnext();
+x StringÆnextLine();
+x booleanÆnextBoolean();
+String:
+¾ nextLine() is used to include space
+String.s=sc.nextLine();
+WRAPPER CLASS:
+¾ Classes of data types is called wrapper class
+¾ It is used to convert any data type into object
+¾ All classes and wrapper classes default value is Null
+CONTROL STATEMENT:
+1. if
+2. if.else
+3. else.if
+variable nameÆ camel notation
+Difference between "=" and "=="Æ
+¾ = is used to assigning the value
+¾ == is used for condition checking
+Example Program:
+public class IfCondition {
+public static void main(String[] args) {
+int empID=20;
+if(empID==20){
+System.out.println("valid");
+}else {
+System.out.println("not valid");
+}
+}
+}
+
+Page
+13
+OutputÆ valid
+¾ More than one condition we use for
+1. logical &&,//Æ logical && check first condition if its fail it doesn't check second
+2.Bitwise &,/Æ bitwise & is check both condition
+¾ So logical && is better than bitwise
+LOOPING:
+1. for
+2. while
+3. do.while
+For:
+Example Program:
+public class ForLoop {
+public static void main(String[] args) {
+System.out.println("Start");
+for (int i = 1; i <= 3; i++) {
+System.out.println(i);
+}
+System.out.println("End");
+}
+}
+output:
+Start
+1
+2
+3
+End
+Inner for loop;
+Example Program:
+public class InnerForLoop {
+public static void main(String[] args) {
+for (int i = 1; i <= 5; i++) {
+for (int j = 1; j <= 6; j++) {
+System.out.print(i);
+
+Page
+14
+}
+System.out.println();
+}}}
+Output:
+111111
+222222
+333333
+444444
+555555
+PrintlnÆ printline
+Break:
+¾ It will exit from the current loop
+Example Program:
+public class InnerForLoop {
+public static void main(String[] args) {
+for (int i = 1; i <= 10; i++) {
+if (i == 5) {
+break;
+}
+System.out.println(i);
+}
+}}
+Output:
+1
+2
+3
+4
+Continue:
+¾ It will skip the particular iteration
+Example Program:
+public class InnerForLoop {
+public static void main(String[] args) {
+for (int i = 1; i <= 10; i++) {
+if (i == 5) {
+continue;
+}
+System.out.println(i);
+
+Page
+15
+}
+}
+}
+Output
+1
+2
+3
+4
+6
+7
+8
+9
+10
+Basic programs using conditional statements:
+EVEN NUMBER AND ODD NUMBER:
+To print Even num:
+Example Program:
+public class InnerForLoop {
+public static void main(String[] args) {
+for (int i = 1; i <= 20; i++) {
+if (i % 2 == 0) {
+System.out.println(i);
+}
+}
+}
+}
+output
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+
+Page
+16
+To print Odd:
+Example Program:
+public class InnerForLoop {
+public static void main(String[] args) {
+for (int i = 1; i <= 20; i++) {
+if (i % 2 == 1) {
+System.out.println(i);
+}
+}
+}
+}
+Output
+1
+3
+5
+7
+9
+11
+13
+15
+17
+19
+Sum of odd and even numbers:
+Sum of odd:
+Example Program:
+public class SumofOddNum {
+public static void main(String[] args) {
+int count=0;
+for(int i=1;i<=100;i++)
+{
+if(i%2==1){
+count=count+i;
+}
+}
+System.out.println(count);
+}
+}
+
+Page
+17
+Output:
+2500
+Sum of even:
+Example Program:
+public class SumofOddNum {
+public static void main(String[] args) {
+int count=0;
+for(int i=1;i<=100;i++)
+{
+if(i%2==0){
+count=count+i;
+}
+}
+System.out.println(count);
+}
+}
+Output:
+2550
+Factorial Numbers:
+Example Program:
+public class FactorialNumbers {
+public static void main(String[] args) {
+int count=1;
+for(int i=1;i<=8;i++){
+count=count*i;
+}System.out.println(count);
+}
+}
+Output:
+40320
+POLYMORPHISM:
+¾ Poly-many
+¾ Morphism-forms
+¾ Taking more than one forms is called polymorphism or one task completed by many ways
+It has 2 types,
+1.Method overloading(static binding/compile time polymorphism)
+2.Method overriding(dynamic binding/run time polymorphism)
+
+Page
+18
+1.Method overloading:
+Class-same
+Method-same
+Argument-differ
+¾ In a same class method name is same and the argument is different is called method overloading
+¾ the argument is depends on
+x data types
+x data types count
+x data type order
+Example Program:
+public class StudentInfo {
+private void studentId(int num) {
+}
+private void studentId(String name) { \\ depends on order
+}
+private void studentId(String email, int ph) { \\depends on data type
+}
+private void studentId(int dob, String add) { \\depends on datatype count
+}
+public static void main(String[] arg) {
+StudentInfo info = new StudentInfo();
+}
+}
+¾ In the same method the argument can't use int and byte because int &byte both are numbers. so it
+doesn't work.
+¾ public void employeeID(int num, byte num2) is not correct
+2.Method overriding:
+Class name-differ(using extends)
+Method-same
+Argument- same
+¾ In a different class , the method name should be same and argument name should be same is
+called overriding
+Example Program:
+¾ our aim is boy getting marry
+¾ 1st class(sub class)
+public class Boy extends Marriage {
+public void girlName() {
+System.out.println("ramya");
+
+Page
+19
+}
+public static void main(String[] args) {
+Boy.b=new Boy();
+b.girlName();
+}
+¾ 2nd class(super class)
+public class Marriage {
+public void girlName() {
+System.out.println("priya");
+}
+output : ramya;
+¾ The same method name in both class it take sub class only
+¾ If we satisfied with super class we go for super class method but we won't satisfy with super class
+we go for sub class method
+¾ We can assign our sub class to our super class but can't reverse
+Example Program:
+¾ Marriage b=new Boy() is possible
+¾ Boy b=new Marriage() impossible
+¾ Inside the class if we use static we dont want to crate object (i.e)
+public class Employee{
+public static void addNum(){
+System.out.println("Hello");
+}
+public static void main(String[] args){
+addNum(); // dont want to create object
+}
+}
+Output: Hello
+¾ If its different class we have to use class name(i.e)
+sub class:
+public class Employee{
+public static void addNum(){
+system.out.println("Hello");
+}}
+super class:
+public class sample{
+public static void main(string[] args){
+Employee.addNum();
+}}
+
+Page
+20
+Output: Hello
+ABSTRACTION:
+¾ Hiding the implementation part is called abstraction
+¾ it has 2 types,
+1.Partially abstraction(abstract class)
+2.Fully abstraction(interface)
+1.Partially Abstraction(Abstract class):
+¾ It will support abstract method and non-abstract method.
+¾ We can¶t create object for abstract class because in the method signature we didn't mention any
+business logic. so
+¾ In abstract method, we only mention abstract signature, won't create business logic
+¾ It have 2 class, abstract class(sub class) and super class. we create object and business logic only
+in super class, won't create in abstract class
+Example Program:
+abstract class
+public abstract class Bank {
+abstract void saving(); //method signature
+abstract void current();
+abstract void salary();
+abstract void joint();
+public void branchDetails(){
+System.out.println("chennai");
+}
+}
+super class
+public class AxisBank extends Bank {
+public void saving() { // method signature
+System.out.println("saving regular"); // business logic
+}
+public void current() {
+System.out.println("current");
+}
+public void salary() {
+System.out.println("salary");
+}
+public void joint() {
+System.out.println("joint");
+}
+public static void main(String[] args) {
+AxisBank info = new AxisBank();
+
+Page
+21
+info.branchDetails();
+info.salary();
+info.saving();
+}}
+Output:
+chennai
+salary
+saving regular
+2. INTERFACE/FULLY ABSTRACTION;
+¾ It will support only abstract method, won't support non abstract method
+¾ In interface "public abstract" is default. we no need to mention
+¾ It using implements keywords
+Example Program:1
+interface
+public interface Bank {
+abstract void saving();
+abstract void current();
+abstract void salary();
+abstract void joint();
+public void branchDetails();
+}
+super class
+public class AxisBank implements Bank {
+public void saving() {
+System.out.println("saving regular");
+}
+public void current() {
+System.out.println("current");
+}
+public void salary() {
+System.out.println("salary");
+}
+public void joint() {
+System.out.println("joint");
+}
+public void branchDetails() {
+System.out.println("chennai");
+}
+public static void main(String[] args) {
+AxisBank info = new AxisBank();
+info.branchDetails();
+info.salary();
+info.saving();
+}
+}
+
+Page
+22
+Output:
+chennai
+salary
+saving regular
+¾ multiple inheritance its Zon¶t support in java but using interface its support
+¾ here we have to create 2 interface(super class) and one sub class(normal). In the sub class we
+implement both interface
+Example Program:2
+interface
+public interface AxisBank {
+public void test();
+}
+public interface HdfcBank {
+public void test();
+}
+sub class(normal class)
+public class Bank implements AxisBank, HdfcBank{
+@Override
+public void test() {
+// TODO Autogenerated method stub
+}
+}
+Difference between abstract class and interface
+Abstract class:
+¾ It is partially abstraction
+¾ It support both abstract method and non-abstract method
+¾ It¶s using "extends" keyword
+¾ Here "public abstract" have to mention
+¾ We can use whatever access specifier we want
+Interface:
+¾ It is fully abstraction
+¾ It support only abstract method
+¾ It¶s using "implement" keyword
+¾ "public Abstract" is default. no need to mention
+¾ Here we use only public( access specifier)
+ARRAYS:
+¾ Collection of similar data
+¾ The value are stored based on index
+¾ The index will start 0 to n1
+
+Page
+23
+Syntax:
+int num[]=new num[5]
+Here,
+int Æ data type
+num Æ variable
+[] Æ Array
+5Æ Array length
+¾ It takes 0 to 4(i.e) 0 to n-1, n=5
+Example Program:
+public class BasicArray {
+public static void main(String[] args) {
+int num[]=new int[5];
+System.out.println(num[2]);
+}
+}
+Output: 0
+¾ If we didn't assign any value, it will takes the default value of data types(int)
+¾ Default value of int is 0
+Example Program:
+public class BasicArray {
+public static void main(String[] args) {
+int num[]=new int[5];
+num[0]=10;
+num[1]=20;
+num[2]=30;
+num[3]=40;
+num[4]=50;
+System.out.println(num[2]);
+}
+}
+Output: 30
+¾ Overwrite the value:
+public class BasicArray {
+public static void main(String[] args) {
+int num[]=new int[5];
+num[0]=10;
+num[1]=20;
+num[2]=30;
+num[3]=40;
+
+Page
+24
+num[4]=50;
+num[2]=300;
+System.out.println(num[2]);
+}}
+Output:
+300
+¾ If we overwrite the value, it takes last one
+To find array length:
+public class BasicArray {
+public static void main(String[] args) {
+int num[]=new int[5];
+num[0]=10;
+num[1]=20;
+num[2]=30;
+num[3]=40;
+num[4]=50;
+num[2]=300;
+int len=num.length;
+System.out.println(len);
+}}
+Output:
+5
+Using for loop:
+public class BasicArray {
+public static void main(String[] args) {
+int num[]=new int[5];
+num[0]=10;
+num[1]=20;
+num[2]=30;
+num[3]=40;
+num[4]=50;
+num[2]=300;
+for(int i=0;i<num.length;i++)
+System.out.println(num[i]);
+}
+}
+Output:
+10
+20
+300
+40
+50
+
+Page
+25
+Enhanced for loop:
+syntax:
+for(int k:num)
+System.out.println(k);
+Example Program:
+public class BasicArray {
+public static void main(String[] args) {
+int num[]=new int[5];
+num[0]=10;
+num[1]=20;
+num[2]=30;
+num[3]=40;
+num[4]=50;
+num[2]=300;
+for(int k:num)
+System.out.println(k);
+}
+}
+Output:
+10
+20
+300
+40
+50
+¾ In this enhanced for loop, have no condition checking and value assign
+¾ It is very fast compare to normal for loop
+Advantage of array:
+¾ In a single variable we can store multiple values
+Disadvantage of arrays:
+¾ It support only similar data types
+¾ It is a fixed size
+¾ Memory wastage is high
+¾ To overcome these we go for collections
+STRING:
+¾ Collections of charactor or word enclosed with double quotes
+
+Page
+26
+Basic Topics:
+x String function
+x Mutable string
+x Immutable string
+Example Program:
+public class StringBasic {
+public static void main(String[] args) {
+String s1="Vengat";
+System.out.println(s1);
+}
+}
+Output: Vengat
+Some Basic Methods:
+charAt():
+¾ It is used to print the particular character
+Example Program:
+public class StringBasic {
+public static void main(String[] args) {
+String s1="Vengat";
+System.out.println(s1);
+char ch = s1.charAt(2);
+System.out.println(ch);
+}
+}
+Output:
+Vengat
+n
+¾ 2 takes as 0 to 2 (i.e) 0 1 2> v e n
+Equqls():
+¾ equals is a method is used to check our string index is true or false
+Example Program:
+public class StringBasic {
+public static void main(String[] args) {
+String s1 = "Vengat";
+System.out.println(s1);
+boolean b = s1.equals("Vengat");
+System.out.println(b);
+boolean b1 = s1.equals("vengat");
+System.out.println(b1);}}
+
+Page
+27
+Output:
+Vengat
+true
+false
+¾ b1 is false because equals() is case sensitive
+Equalsignorecase():
+¾ It is like a equals() method but it is not case sensitive
+Example Program:
+public class StringBasic {
+public static void main(String[] args) {
+String s1 = "Vengat";
+System.out.println(s1);
+boolean b = s1.equals("Vengat");
+System.out.println(b);
+boolean b1 = s1.equalsIgnoreCase("vengat");
+System.out.println(b1);
+}}
+Output:
+Vengat
+true
+true
+contains():
+¾ Contains() is a method , is used to check the particular character or word in the string
+Example Program:
+public class StringBasic {
+public static void main(String[] args) {
+String s1 = "Hello welcome to java class";
+System.out.println(s1);
+boolean b = s1.contains("welcome");
+System.out.println(b);
+}
+}
+Output:
+Hello welcome to java class
+true
+¾ If we check other than the string index, it shows false
+
+Page
+28
+Example Program:
+public class StringBasic {
+public static void main(String[] args) {
+String s1 = "Hello welcome to java class";
+System.out.println(s1);
+boolean b = s1.contains("welcome");
+System.out.println(b);
+boolean b1 = s1.contains("hai");
+System.out.println(b1);
+}
+}
+Output:
+Hello welcome to java class
+true
+false
+split():
+¾ split() is a method, is used to split the string by space or character or word or whatever
+Example Program:
+public class StringBasic {
+public static void main(String[] args) {
+String s1 = "Hello welcome to java class";
+String[] x = s1.split(" "); // here we split by space
+System.out.println(s1.length());
+System.out.println(x.length);
+String[] x1 = s1.split("o"); // here we split by "o"
+System.out.println(s1.length());
+System.out.println(x1.length);
+}
+}
+Output:
+27 //this whole string length s1
+5 // this is after splitting by spacex
+27 //this whole string length s1
+4 // this is after splitting by "o"x1
+For loop:
+Example Program:
+public class StringBasic {
+public static void main(String[] args) {
+String s1 = "Hello welcome to java class";
+
+Page
+29
+String[] x = s1.split(" "); // here we split by space
+for(int i=0;i<x.length;i++){
+System.out.println(x[i]);
+}
+}
+}
+Output:
+Hello
+welcome
+to
+java
+class
+Enhanced for loop:
+public class StringBasic {
+public static void main(String[] args) {
+String s1 = "Hello welcome to java class";
+String[] x = s1.split(" "); // here we split by space
+for (String k : x) {
+System.out.println(k);
+}
+}
+}
+Output:
+Hello
+welcome
+to
+java
+class
+toUpperCase() and toLowerCase():
+¾ toUpperCase() is used to convert the string into uppercase
+¾ toLowerCase() is used to convert the string into lowercase
+Example Program:
+public class StringBasic {
+public static void main(String[] args) {
+String s1 = "Hello";
+String m = s1.toLowerCase(); // to convert lowercase
+System.out.println(m);
+String m1 = s1.toUpperCase(); // to convert upper
+
+Page
+30
+System.out.println(m1);
+}
+}
+Output:
+hello
+HELLO
+subString();
+¾ It is used to print from, which character we want in the string index
+Example Program:
+public class StringBasic {
+public static void main(String[] args) {
+ String s1 = "Hello java";
+String m = s1.substring(2);
+System.out.println(m);
+String m1 = s1.substring(2, 6);
+// upto
+System.out.println(m1);
+}}
+Output:
+llo java
+llo
+indexOf():
+¾ It is used to print the position of the character in the string
+¾ If it is available means, its print the relevant position
+¾ But if the character is not available , it will print "-1"
+¾ As well as , if multiple same character is have, it takes first one position
+Example Program:
+public class StringBasic {
+public static void main(String[] args) {
+String s1 = "Hello java";
+int m = s1.indexOf("o"); // "o", to print o position
+System.out.println(m);
+int m1 = s1.indexOf("b"); // "b" is not in the string, so it print "-1"
+System.out.println(m1);
+int m2 = s1.indexOf("a"); // multiple character "a", it takes first one
+System.out.println(m2);
+}
+}
+
+Page
+31
+Output:
+4
+-1
+7
+lastIndexof():
+¾ If multiple same character , it takes last one
+Example Program:
+public class StringBasic {
+public static void main(String[] args) {
+String s1 = "Hello java";
+int m = s1.indexOf("o"); // "o", to print o position
+System.out.println(m);
+int m1 = s1.indexOf("b"); // "b" is not in the string, so it print "1"
+System.out.println(m1);
+int m2 = s1.indexOf("a"); // multiple character "a", it takes first one
+System.out.println(m2);
+int m3 = s1.lastIndexOf("a"); // multiple character "a", it takes last
+one
+System.out.println(m3);
+}
+}
+Output:
+4
+1
+7
+9
+replace():
+¾ replace() is a method ,it is used to replace the index character or word
+Example Program:
+public class StringBasic {
+public static void main(String[] args) {
+String s1 = "Hello world";
+String m = s1.replace("world", "java"); // to replace world to java
+System.out.println(m);
+}
+}
+Output:
+Hello java
+
+Page
+32
+Example Program:
+public class StringBasic {
+public static void main(String[] args) {
+String s1 = "This is manual Testing";
+String m = s1.replace("manual", "Automation"); // to replace manual to
+Automation
+System.out.println(m);
+}
+}
+Output:
+This is Automation Testing
+isEmpty():
+¾ It is used to check the index length is zero or not,
+¾ If its zero, its true otherwise false
+Example Program:
+public class StringBasic {
+public static void main(String[] args) {
+String s1 = "";
+boolean m = s1.isEmpty();// here index is empty, so its true
+System.out.println(m);
+String s2 = " ";
+boolean m1 = s2.isEmpty();
+// here index is not empty because space included
+System.out.println(m1); // space is also a one character
+}
+}
+Output:
+true
+false
+startsWith() and endsWith():
+¾ It is used to check the index starts with particular word or character
+¾ As well as ends with
+Example Program:
+public class StringBasic {
+public static void main(String[] args) {
+String s1 = "Hello java class";
+boolean m = s1.startsWith("Hello");
+System.out.println(m);
+boolean m1 = s1.endsWith("class");
+System.out.println(m1);
+}
+}
+
+Page
+33
+Output:
+true
+true
+ASCII value:
+¾ To find ascii value
+Example Program:
+public class Dummy {
+public static void main(String[] args) {
+char ch='M';
+int x=ch;
+System.out.println(x);
+}
+}
+Output: 77
+¾ Every character have one ASCII value
+¾ A-ZÆ 65 to 90
+¾ A-zÆ 97 to 122
+¾ 0-9Æ 48 to 57
+¾ remaining special characters
+compareTo():
+¾ It is a method, it is used to compare the character based on ASCII value
+Example Program:
+public class Dummy {
+public static void main(String[] args) {
+String s="A";
+int i = s.compareTo("A");
+System.out.println(i);
+}
+}
+Output:
+0
+Here, A ASCII value is 65, so 65-65=0
+Example Program:
+public class Dummy {
+public static void main(String[] args) {
+String s="A";
+int i = s.compareTo("B");
+System.out.println(i);
+}}
+
+Page
+34
+Output:
+1
+Here, 65-66=1
+¾ If we use many character, it will compare only first differing character
+Example Program:
+public class Dummy {
+public static void main(String[] args) {
+String s="ABCD";
+int i = s.compareTo("ABFK ");
+System.out.println(i);
+}
+}
+Output:
+3 // 6770=3
+¾ If it is different length and same accuration, the output will be based on length
+Example Program:
+public class Dummy {
+public static void main(String[] args) {
+String s="ABCD";
+int i = s.compareTo("AB");
+System.out.println(i);
+}
+}
+Output:
+2
+Here, ABCD length is 4
+AB2, 42=2
+¾ If different length and different accuration , it will compare the first differing character
+Example Program:
+public class Dummy {
+public static void main(String[] args) {
+String s="ABCD";
+int i = s.compareTo("ACLK");
+System.out.println(i);
+}
+}
+
+Page
+35
+Output:
+1
+Here, 6667=1, BC=1
+Literal String:
+¾ It¶s stored inside the heap memory (string pool or string constant).
+¾ It will share the memory if same value (duplicate value)
+Non-literal string:
+¾ Its stored in the heap memory.
+¾ Its create a new memory every time even if its duplicate value(same value)
+Example Program:
+public class StringBasic {
+public static void main(String[] args) {
+String s1 = "vengat";
+String s2 = "vengat"; // literal string(same value so its share
+the memory)
+System.out.println(System.identityHashCode(s1));
+System.out.println(System.identityHashCode(s2));
+String x1=new String("vengat");
+String x2=new String("vengat");// non literal string( its won't
+share, create new memory
+System.out.println(System.identityHashCode(x1));
+System.out.println(System.identityHashCode(x2));
+}
+}
+¾ identityHashcode() is used to print the reference value(storage reference)
+Output:
+31168322 // literal string share the memory if same value
+31168322
+17225372
+5433634 // but non literal won't share
+Immutable string:
+¾ We can store more duplicate value in same memory
+¾ We can't change the value in memory
+¾ In concord nation, it¶s have to create new memory
+Mutable string:
+¾ we can't store duplicate value in same memory
+¾ we can change the value in memory
+¾ In concord nation, its takes same memory
+
+Page
+36
+Example Program:
+public class StringBasic {
+public static void main(String[] args) {
+String s1 = "vengat";
+String s2 = "prabu"; // mutable string
+System.out.println("Immutable string");
+System.out.println(System.identityHashCode(s1));
+System.out.println(System.identityHashCode(s2));
+String r = s1.concat(s2);
+System.out.println(r);
+System.out.println(System.identityHashCode(r));
+StringBuffer x1=new StringBuffer("vengat");
+StringBuffer x2=new StringBuffer("prabu");// mutable string
+System.out.println("mutable string");
+System.out.println(System.identityHashCode(x1));
+System.out.println(System.identityHashCode(x2));
+x1.append(x2);
+System.out.println(x1);
+System.out.println(System.identityHashCode(x1));
+}
+}
+Output:
+Immutable string
+31168322
+17225372
+vengatprabu
+5433634 // here it takes new memory for concordinattion
+mutable string
+2430287
+17689166
+vengatprabu
+2430287 // but here it takes x1 memory
+COLLECTIONS:
+Why we go for collections:
+¾ It will support dissimilar data types.
+¾ It is dynamic memory allocation
+¾ No memory wastage like array
+
+Page
+37
+It has 3 types,
+1. List
+2. Set
+3. Map
+1. List :( Interface)
+ ArrayList(class)
+ LinkedArrayList(c)
+ vector(c)
+2.Set:(Interface)
+ Hashset(c)
+ Linked hashset(c)
+ Treeset(c)
+3.Map:(Interface)
+ Hashmap(c)
+ Linked hashmap(c)
+ Treemap(c)
+ Hashtable(c)
+ concurrent hashmap(C)
+List:
+ArrayList:
+Syntax:
+List ex=new ArrayList();
+Here,
+ListÆinterface
+exÆobject name
+ArrayList()Æ class
+Example Program:
+public class ArList {
+public static void main(String[] args) {
+List ex=new ArrayList();
+ex.add(10);
+ex.add(10000000000000000l);
+ex.add(10.12f);
+ex.add("Hai");
+ex.add("A");
+ex.add(true);
+System.out.println(ex);
+}
+}
+
+Page
+38
+Output:
+[10, 10000000000000000, 10.12, Hai, A, true]
+¾ add() is a method, it is used to insert a value.
+¾ Arraylist will display the output based on the insertion order
+Generics:
+¾ It will support particular datatypes or object only
+¾ It is a features of jdk 1.5
+¾ In the generics, we can mention only wrapper class
+¾ < >- This is generic symbol, is used to define the particular datatype
+¾ If we need integer datatype,
+syntax:
+List<Integer> ex=new ArrayList<Integer>();
+Example Program:
+public class ArList {
+public static void main(String[] args) {
+List<Integer> ex=new ArrayList<Integer>();
+ex.add(10);
+ex.add(20);
+ex.add(30);
+ex.add(40);
+ex.add(40);
+ex.add(50);
+System.out.println(ex);
+}
+}
+Output:
+[10, 20, 30, 40, 40, 50]
+¾ List allows the duplicate value
+¾ ArrayList print in a insertion order
+size():
+¾ size is a method, it is used to find the size of the ArrayList
+Example Program:
+public class ArList {
+public static void main(String[] args) {
+List<Integer> ex=new ArrayList<Integer>();
+ex.add(10);
+ex.add(20);
+ex.add(30);
+ex.add(40);
+
+Page
+39
+ex.add(40);
+ex.add(50);
+int i = ex.size();
+System.out.println(i);
+}}
+Output:
+6
+get():
+¾ get() is a method , it is used to print the particular value
+Example Program:
+public class ArList {
+public static void main(String[] args) {
+List<Integer> ex=new ArrayList<Integer>();
+ex.add(10);
+ex.add(20);
+ex.add(30);
+ex.add(40);
+ex.add(40);
+ex.add(50);
+ int x = ex.get(3);
+System.out.println(x);
+}
+}
+Output:
+ 40
+¾ it takes the value from 0(i.e) 0 1 2 3 > 10 20 30 40
+For loop:
+public class ArList {
+public static void main(String[] args) {
+List<Integer> ex=new ArrayList<Integer>();
+ex.add(10);
+ex.add(20);
+ex.add(30);
+ex.add(40);
+ex.add(40);
+ex.add(50);
+ for(int i=0;i<ex.size();i++){
+System.out.println(ex.get(i));
+}
+}
+}
+
+Page
+40
+Output:
+10
+20
+30
+40
+40
+50
+Enhanced for loop:
+public class ArList {
+public static void main(String[] args) {
+List<Integer> ex=new ArrayList<Integer>();
+ex.add(10);
+ex.add(20);
+ex.add(30);
+ex.add(40);
+ex.add(40);
+ex.add(50);
+ for(Integer k:ex){
+System.out.println(k);
+}
+}
+}
+Output:
+10
+20
+30
+40
+40
+50
+Remove():
+¾ remove is a method, it is used to remove the particular index value
+¾ If we remove the particur index value, index order will not change
+¾ After that the index value move to forward
+Example Program:
+public class ArList {
+public static void main(String[] args) {
+
+Page
+41
+List<Integer> ex = new ArrayList<Integer>();
+ex.add(10);
+ex.add(20);
+ex.add(30);
+ex.add(40);
+ex.add(40);
+ex.add(50);
+ex.remove(3);
+System.out.println(ex);
+}
+}
+Output:
+[10, 20, 30, 40, 50]
+¾ In this output, index order is not change
+¾ But the values moved to forward
+Index based add():
+¾ It is used to add the value based on the index
+Example Program:
+public class ArList {
+public static void main(String[] args) {
+List<Integer> ex = new ArrayList<Integer>();
+ex.add(10);
+ex.add(20);
+ex.add(30);
+ex.add(40);
+ex.add(40);
+ex.add(50);
+ex.add(2,100);
+System.out.println(ex);
+}
+}
+Output:
+[10, 20, 100, 30, 40, 40, 50]
+¾ In this o/p , if we insert one value based on index, after all the index value move to backward
+set();
+¾ set is a method, it is used to replace the value but index and value order will not change
+Example Program:
+public class ArList {
+public static void main(String[] args) {
+List<Integer> ex = new ArrayList<Integer>();
+
+Page
+42
+ex.add(10);
+ex.add(20);
+ex.add(30);
+ex.add(40);
+ex.add(40);
+ex.add(50);
+ex.set(2,100);
+System.out.println(ex);
+}
+}
+Output:
+[10, 20, 100, 40, 40, 50]
+contains():
+¾ contains() is a method it is used to check the particular value or object
+Example Program:
+public class ArList {
+public static void main(String[] args) {
+List<Integer> ex = new ArrayList<Integer>();
+ex.add(10);
+ex.add(20);
+ex.add(30);
+ex.add(40);
+ex.add(40);
+ex.add(50);
+boolean x = ex.contains(30);
+System.out.println(x);
+boolean y = ex.contains(100);
+System.out.println(y);
+}
+}
+Output:
+true
+false
+clear():
+¾ clear is a method it is used to clear the all index value
+Example Program:
+public class ArList {
+public static void main(String[] args) {
+List<Integer> ex = new ArrayList<Integer>();
+ex.add(10);
+ex.add(20);
+
+Page
+43
+ex.add(30);
+ex.add(40);
+ex.add(40);
+ex.add(50);
+System.out.println(ex);// before clearing
+ex.clear();
+System.out.println(ex);// after clearing
+}
+}
+Output:
+[10, 20, 30, 40, 40, 50]
+[]
+indexof():
+¾ indexof() is a method, it is used to print the position of the list
+Example Program:
+public class ArList {
+public static void main(String[] args) {
+List<Integer> ex = new ArrayList<Integer>();
+ex.add(10);
+ex.add(20);
+ex.add(30);
+ex.add(40);
+ex.add(40);
+ex.add(50);
+int x = ex.indexOf(30);
+System.out.println(x);
+}
+}
+Output:
+2
+Lastindexof():
+¾ It is used to print the position from the last
+Example Program:
+public class ArList {
+public static void main(String[] args) {
+List<Integer> ex = new ArrayList<Integer>();
+ex.add(10);
+ex.add(20);
+ex.add(30);
+ex.add(40);
+ex.add(40);
+
+Page
+44
+ex.add(50);
+int x = ex.lastIndexOf(40);
+System.out.println(x);
+}
+}
+Output:
+4
+addAll():
+¾ addAll() is a method, it is used to copy from one list to another list
+Example Program:
+public class ArList {
+public static void main(String[] args) {
+List<Integer> ex = new ArrayList<Integer>();
+List<Integer> ex1 = new ArrayList<Integer>();
+ex.add(10);
+ex.add(20);
+ex.add(30);
+ex.add(40);
+ex.add(40);
+ex.add(50);
+System.out.println(ex);
+System.out.println(ex1);// before addAll
+ex1.addAll(ex);
+System.out.println(ex);
+System.out.println(ex1);// After addAll
+}
+}
+Output:
+[10, 20, 30, 40, 40, 50]
+[]
+[10, 20, 30, 40, 40, 50]
+[10, 20, 30, 40, 40, 50]
+removeAll():
+¾ removeAll() is a method , it is used to compare the both list and remove all the list1 values in list
+2
+(i.e)
+list2=list2-list1
+
+Page
+45
+Example Program:
+public class ArList {
+public static void main(String[] args) {
+List<Integer> ex = new ArrayList<Integer>();
+List<Integer> ex1 = new ArrayList<Integer>();
+ex.add(10);
+ex.add(20);
+ex.add(30);
+ex.add(40);
+ex.add(50);
+ex1.addAll(ex);
+ex.add(100);
+ex.add(200);
+ex.add(300);
+ex1.add(1000);
+ex1.add(50);
+ex1.add(2000);
+ex1.add(3000);
+System.out.println(ex);
+System.out.println(ex1);
+ex1.removeAll(ex);
+System.out.println(ex1);
+}
+}
+Output:
+[10, 20, 30, 40, 50, 100, 200, 300]
+[10, 20, 30, 40, 50, 1000, 50, 2000, 3000]
+[1000, 2000, 3000]
+¾ If we go for removeAll method, here ex1.removeAll(ex), ex1 compare to ex and remove all ex
+values in the ex1.
+retainAll():
+¾ retainAll() is a method, it is used to compare both list and print the common values
+Example Program:
+public class ArList {
+public static void main(String[] args) {
+List<Integer> ex = new ArrayList<Integer>();
+List<Integer> ex1 = new ArrayList<Integer>();
+ex.add(10);
+ex.add(20);
+ex.add(30);
+ex.add(40);
+ex.add(50);
+ex1.addAll(ex);
+ex.add(100);
+
+Page
+46
+ex.add(200);
+ex.add(300);
+ex1.add(1000);
+ex1.add(2000);
+ex1.add(3000);
+System.out.println(ex);
+System.out.println(ex1);
+ex1.retainAll(ex);
+System.out.println(ex1);
+}
+}
+Output:
+[10, 20, 30, 40, 50, 100, 200, 300]
+[10, 20, 30, 40, 50, 1000, 2000, 3000]
+[10, 20, 30, 40, 50]
+LinkedList:
+systax:
+List<Integer> ex = new LinkedList<Integer>();
+Example Program:
+public class ArList {
+public static void main(String[] args) {
+List<Integer> ex = new LinkedList<Integer>();
+ex.add(10);
+ex.add(20);
+ex.add(30);
+ex.add(40);
+ex.add(50);
+System.out.println(ex);
+}
+}
+Output:
+[10, 20, 30, 40, 50]
+¾ it will also print in insertion order.
+Vector:
+syntax:
+List<Integer> ex = new Vector<Integer>();
+Example Program:
+public class ArList {
+public static void main(String[] args) {
+
+Page
+47
+List<Integer> ex = new Vector<Integer>();
+ex.add(10);
+ex.add(20);
+ex.add(30);
+ex.add(40);
+ex.add(50);
+System.out.println(ex);
+}
+}
+Output:
+[10, 20, 30, 40, 50]
+¾ It will also print the same insertion order.
+¾ in all the arraylist methods, will also support in LinkedList and Vector
+ArrayList: Worst case
+¾ In ArrayList deletion and insertion is a worst one because if we delete/insert one index value after
+all the index move to forward/backward.
+¾ It makes performance issue.
+ArrayList: Best case
+¾ In Arraylist retrieve/searching is a best one
+¾ For ex we have 100 index is there, if we going to print 60th value, we can easily search
+LinkedList: Best case
+¾ Insertion and deletion is a best one because
+¾ Here all values based on the seperate nodes. so, here we can easily delete/insert one value(i.e) if
+we delete one value, the next node will join to the previous one
+LinkedList: Worst case
+¾ Searching/retrieving is a worst
+¾ For ex, if we have 100 nodes, we have to print 90th node value, it will pass to all the previous
+nodes and comes to first and then it will print.
+¾ It¶s makes performance issue
+Difference between ArrayList and Vector:
+ArrayList:
+¾ Asynchronize
+¾ It is not a thread safe
+Vector:
+¾ Synchronize
+¾ Thread safe
+
+Page
+48
+Here,
+SynchronizeÆ one by one(thread safe)
+AsynchronizeÆparalally(not thread safe)
+Example: ticket booking,
+If one ticket is having,10 people is booking at a same time, what happen , the one person only booked the
+ticket. because its a synchronize process. it allows one by one.
+List<Integer> ex = new ArrayList<Integer>();
+List<Integer> ex = new LinkedList<Integer>();
+List<Integer> ex = new Vector<Integer>();
+here we can write these in different way,
+ArrayList<Integer> ex = new ArrayList<Integer>();
+LinkedList<Integer> ex = new LinkedList<Integer>();
+Vector<Integer> ex = new Vector<Integer>();
+User defined Array list:
+¾ Here we can use our own data type
+Pojo class :(client old java object/model class/bean class)
+¾ In class level if we use private , even we can access in another class.
+¾ If we use private in class 2, right click in class 2Æsource Æ generate getters and setters
+¾ Using this methods we can access in another class
+¾ This method is called pojo class
+Class 1:
+import java.util.ArrayList;
+import java.util.List;
+public class Employee extends New {
+public static void main(String[] args) {
+List<Employee> emp=new ArrayList<Employee>();
+Employee E1=new Employee();
+E1.setId(12);
+E1.setName("vengat");
+E1.setEmail("vengat123@gmail.com");
+Employee E2=new Employee();
+E2.setId(13);
+
+Page
+49
+E2.setName("mohan");
+E2.setEmail("mohan123@gmail.com");
+Employee E3=new Employee();
+E3.setId(14);
+E3.setName("vel");
+E3.setEmail("vel123@gmail.com");
+emp.add(E1);
+emp.add(E2);
+emp.add(E3);
+for (Employee x : emp) {
+System.out.println(x.getId());
+System.out.println(x.getName());
+System.out.println(x.getEmail());
+}
+}
+}
+Class 2:
+public class New {
+private int id;
+private String name;
+private String email;
+public int getId() {
+return id;
+}
+public void setId(int id) {
+this.id = id;
+}
+public String getName() {
+return name;
+}
+public void setName(String name) {
+this.name = name;
+}
+public String getEmail() {
+return email;
+}
+public void setEmail(String email) {
+this.email = email;
+}
+}
+
+Page
+50
+Output:
+12
+vengat
+vengat123@gmail.com
+13
+mohan
+mohan123@gmail.com
+14
+vel
+vel123@gmail.com
+List:
+In the list we have to know these points,
+¾ It is all insertion order
+¾ It allows duplicate value
+¾ It is index based
+Set:
+¾ It ignore the duplicate value
+¾ It is value based
+Hashset:
+¾ It will print random order
+Example Program:
+public class ArList {
+public static void main(String[] args) {
+Set<Integer> ex = new HashSet<Integer>();
+ex.add(10);
+ex.add(20);
+ex.add(30);
+ex.add(40);
+ex.add(50);
+ex.add(50);
+System.out.println(ex);
+}
+}
+Output:
+[50, 20, 40, 10, 30] // random order and ignore duplicate value
+¾ It will allows one Null value and won't allow duplicate NULL
+LinkedHashset:
+¾ Insertion order
+
+Page
+51
+Example Program:
+public class ArList {
+public static void main(String[] args) {
+Set<Integer> ex = new LinkedHashSet<Integer>();
+ex.add(10);
+ex.add(20);
+ex.add(30);
+ex.add(40);
+ex.add(50);
+ex.add(50);
+System.out.println(ex);
+}
+}
+Output:
+[10, 20, 30, 40, 50] // insertion order
+¾ It will also allows one Null value and won't allow duplicate NULL
+TreeSet:
+¾ Ascending order
+Example Program:
+public class ArList {
+public static void main(String[] args) {
+Set<Integer> ex = new TreeSet<Integer>();
+ex.add(20);
+ex.add(10);
+ex.add(30);
+ex.add(50);
+ex.add(40);
+ex.add(50);
+System.out.println(ex);
+}
+}
+Output:
+[10, 20, 30, 40, 50]
+Example Program:
+public class ArList {
+public static void main(String[] args) {
+Set<String> ex = new TreeSet<String>();
+ex.add("Ramesh");
+ex.add("babu");
+ex.add("Vasu");
+ex.add("10000");
+System.out.println(ex);
+}
+}
+
+Page
+52
+Output:
+[10000, Ramesh, Vasu, babu]
+Here,
+¾ It will print ascending order
+¾ Ascending order based on the ASCII value
+(i.e)
+¾ 1ÆASCII value is 49
+¾ RÆASCII value is 82
+¾ VÆASCII value is 86
+¾ bÆASCII value is 98
+[49,82,86,98]Æ[10000, Ramesh, Vasu, babu]Æ this is a way to print ascending order.
+¾ TreeSet won't allow single Null value
+Set:
+¾ It is not maintaining any order(i.e)
+¾ HashsetÆ random order
+¾ LinkedHashsetÆinsertion order
+¾ TreesetÆ ascending order
+¾ It is value based
+remove():
+¾ remove is a method , it is used to remove particular value
+public class ArList {
+public static void main(String[] args) {
+Set<Integer> ex = new TreeSet<Integer>();
+ex.add(10);
+ex.add(20);
+ex.add(30);
+ex.add(40);
+ex.add(50);
+ex.add(50);
+ex.remove(40);
+System.out.println(ex);
+}
+}
+Output:
+[10, 20, 30, 50]
+¾ Normal for loop is not work here because it is not index based, it is value based
+
+Page
+53
+Enhanced for loop:
+public class ArList {
+public static void main(String[] args) {
+Set<Integer> ex = new TreeSet<Integer>();
+ex.add(10);
+ex.add(20);
+ex.add(30);
+ex.add(40);
+ex.add(50);
+ex.add(50);
+for(int i:ex){
+System.out.println(i);
+}
+}
+}
+Output:
+10
+20
+30
+40
+50
+¾ All wrapper class default value is Null as well as all class default value is Null
+Null:
+¾ Null is a undefined/unknown/unassigned value
+¾ Null is won't create any memory
+¾ So Treeset will give exception in compile time if we use Null
+Difference between List and Set:
+List:
+¾ It is all insertion order
+¾ It allows duplicate value
+¾ It is index based
+Set:
+¾ It is not maintaining any order(i.e)
+HashsetÆ random order
+LinkedHashsetÆinsertion order
+TreesetÆ ascending order
+
+Page
+54
+¾ It is value based
+¾ It ignores duplicate value
+we can copy the values from List to set as well as set to list
+Example Program:
+public class ArList {
+public static void main(String[] args) {
+List<Integer> ex=new ArrayList();
+Set<Integer> ex1 = new TreeSet<Integer>();
+ex.add(10);
+ex.add(20);
+ex.add(30);
+ex.add(40);
+ex.add(50);
+ex.add(50);
+ex.add(10);
+ex1.addAll(ex);
+System.out.println(ex);
+System.out.println(ex1);
+}}
+Output:
+[10, 20, 30, 40, 50, 50, 10]
+[10, 20, 30, 40, 50]
+Here, set ignore the duplicate value
+¾ we can find the duplicate count using size() method
+Example Program:
+public class ArList {
+public static void main(String[] args) {
+List<Integer> ex = new ArrayList();
+Set<Integer> ex1 = new TreeSet<Integer>();
+ex.add(10);
+ex.add(20);
+ex.add(30);
+ex.add(40);
+ex.add(50);
+ex.add(50);
+ex.add(10);
+ex1.addAll(ex);
+System.out.println(ex);
+System.out.println(ex1);
+int i = ex.size() ex1.size();
+System.out.println(i);
+}
+}
+
+Page
+55
+Output:
+[10, 20, 30, 40, 50, 50, 10]
+[10, 20, 30, 40, 50]
+2
+Here 2 duplicate value is there
+Map:
+¾ It is key and value pair
+¾ Here key+value is a one entry
+¾ Key ignore the duplicate value and value allow the duplicate
+Hashmap:
+¾ It is a random order(based on key)
+Example Program:
+public class ArList {
+public static void main(String[] args) {
+Map<Integer, String> ex = new HashMap<Integer, String>();
+ex.put(10, "Java");
+ex.put(20, "Java");
+ex.put(30, "sql");
+ex.put(40, ".net");
+ex.put(50, "sales");
+ex.put(50, "fire");
+System.out.println(ex);
+}
+}
+Output:
+{50=fire, 20=Java, 40=.net, 10=Java, 30=sql}
+¾ If duplicate key is there, it takes the last one
+¾ Key will allows the only one Null
+¾ Value allow the duplicate null
+Linked Hashmap:
+¾ Insertion order( based on key)
+¾ Key will allows the only one Null
+¾ Value allow the duplicate null
+Map<Integer, String> ex = new LinkedHashMap<Integer, String>()
+
+Page
+56
+TreeMap:
+¾ Ascending order(based on key)
+¾ Key won't allow Null(even single null)
+¾ Value allow the duplicate null
+Map<Integer, String> ex = new TreeMap<Integer, String>()
+Hashtable:
+¾ Random order
+¾ Both key and values are ignore the Null
+Map<Integer, String> ex = new Hashtable<Integer, String>()
+concurrent hashmap:
+¾ Random order
+¾ Both key and values are ignore the Null
+Map<Integer, String> ex = new ConcurrentHashMap<Integer, String>()
+Difference between HashMap and HashTable:
+HashMap:
+¾ Key allows single null
+¾ Asynchronies(not thread safe)
+Hashtable:
+¾ Key and value won't allow null
+¾ Synchronize(thread safe)
+Some Methods:
+get():
+¾ It is a method, it is used to print the value based on key
+Example Program:
+public class ArList {
+public static void main(String[] args) {
+Map<Integer, String> ex = new HashMap<Integer, String>();
+ex.put(10, "Java");
+ex.put(20, "Java");
+ex.put(30, "sql");
+ex.put(40, ".net");
+ex.put(50, "sales");
+ex.put(50, "fire");
+String s=ex.get(40);
+System.out.println(s);
+}
+}
+
+Page
+57
+Output:
+.net
+keyset():
+¾ It is a method, it is used to seperate the key
+Example Program:
+public class ArList {
+public static void main(String[] args) {
+Map<Integer, String> ex = new HashMap<Integer, String>();
+ex.put(10, "Java");
+ex.put(20, "Java");
+ex.put(30, "sql");
+ex.put(40, ".net");
+ex.put(50, "sales");
+ex.put(50, "fire");
+Set<Integer> s = ex.keySet();
+System.out.println(s);
+}
+}
+Output:
+[50, 20, 40, 10, 30]
+Value():
+¾ It is a method, it is used to seperate the value
+Example Program:
+public class ArList {
+public static void main(String[] args) {
+Map<Integer, String> ex = new HashMap<Integer, String>();
+ex.put(10, "Java");
+ex.put(20, "Java");
+ex.put(30, "sql");
+ex.put(40, ".net");
+ex.put(50, "sales");
+ex.put(50, "fire");
+Collection<String> s = ex.values();
+System.out.println(s);
+}
+}
+Output:
+[fire, Java, .net, Java, sql]
+
+Page
+58
+entryset():
+¾ It is used to iterate the map
+Example Program:
+public class ArList {
+public static void main(String[] args) {
+Map<Integer, String> ex = new HashMap<Integer, String>();
+ex.put(10, "Java");
+ex.put(20, "Java");
+ex.put(30, "sql");
+ex.put(40, ".net");
+ex.put(50, "sales");
+ex.put(50, "fire");
+Set<Entry<Integer, String>> s = ex.entrySet();
+for(Entry<Integer, String> x:s){
+System.out.println(x);
+}
+}
+}
+Output:
+50=fire
+20=Java
+40=.net
+10=Java
+30=sql
+¾ We can print key and value seperately
+Example Program:
+public class ArList {
+public static void main(String[] args) {
+Map<Integer, String> ex = new HashMap<Integer, String>();
+ex.put(10, "Java");
+ex.put(20, "Java");
+ex.put(30, "sql");
+ex.put(40, ".net");
+ex.put(50, "sales");
+ex.put(50, "fire");
+Set<Entry<Integer, String>> s = ex.entrySet();
+for(Entry<Integer, String> x:s){
+System.out.println(x.getKey());
+System.out.println(x.getValue());
+}
+}
+}
+
+Page
+59
+Output:
+50
+fire
+20
+Java
+40
+.net
+10
+Java
+30
+Sql
+EXCEPTION:
+¾ Exception is like a error, the program will terminated that line itself
+Example Program:
+public class Exception {
+public static void main(String[] args) {
+System.out.println("Start");
+System.out.println("1");
+System.out.println("2");
+System.out.println("3");
+System.out.println(10/0);
+System.out.println("4");
+System.out.println("5");
+System.out.println("End");
+}
+}
+Output:
+Start
+1
+2
+3
+
+Page
+60
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+at org.exception.Exception.main(Exception.java:9)
+¾ This is exception, if we getting error in run time , the program will be terminated from that line
+¾ Here, java:9 is 9th line only we getting exception
+Throwable:
+¾ Super class of exception Æ throwable
+¾ Exception
+¾ Error
+Exception:
+1. Unchecked exception(Run time exception)
+2. Checked exception(Compile time exception)
+Unchecked exception:
+1. ArithmaticException
+2. NullPointException
+3. InputMismatchException
+4. ArrayIndexOutOfBoundExcepion
+5. StringIndexOutOfBoundExcepion
+6. IndexOutOfBoundExcepion
+7. NumberFormatException
+Checked exception:
+1. IOException
+2. SQLException
+3. FileNotFoundException
+4. ClassNotFoundException
+1. ArithmaticException:
+¾ If we are trying to give any number divided by zero, we get Arithmatic exception.
+Example Program:
+public class Exception {
+public static void main(String[] args) {
+System.out.println("Start");
+
+Page
+61
+System.out.println("1");
+System.out.println("2");
+System.out.println("3");
+System.out.println(10/0);
+System.out.println("4");
+System.out.println("5");
+System.out.println("End");
+}
+}
+Output:
+Start
+1
+2
+3
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+at org.exception.Exception.main(Exception.java:9)
+2. NullPointException:
+¾ If we give Null in the string, it will throw the Null point exception. Because default value of
+string is Null.
+Example Program:
+public class Exception {
+public static void main(String[] args) {
+String s= null;
+System.out.println(s.length());
+}
+}
+Output:
+Exception in thread "main" java.lang.NullPointerException
+at org.exception.Exception.main(Exception.java:6)
+3.InputMismatchException:
+¾ If we getting input from the user, the user need to give integer input but the user trying to input
+string value , at this this we get input mismatch exception
+
+Page
+62
+Example Program:
+public class Exception {
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+System.out.println("PLs enter value");
+int i=sc.nextInt();
+System.out.println(i);
+}
+}
+Output:
+PLs enter value
+hai
+Exception in thread "main" java.util.InputMismatchException
+at java.util.Scanner.throwFor(Unknown Source)
+at java.util.Scanner.next(Unknown Source)
+at java.util.Scanner.nextInt(Unknown Source)
+at java.util.Scanner.nextInt(Unknown Source)
+at org.exception.Exception.main(Exception.java:9)
+4. ArrayIndexOutOfBoundExcepion:
+¾ In particular array, the index value is not available it will throw Array index of bound exception.
+Example Program:
+public class Exception {
+public static void main(String[] args) {
+int num[]=new int[4];
+System.out.println(num[5]);
+}
+}
+Output:
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
+at org.exception.Exception.main(Exception.java:8)
+
+Page
+63
+5. StringIndexOutOfBoundExcepion:
+¾ In particular String, the index value is not available it will throw String index Out of bound
+exception.
+Example Program:
+public class Exception {
+public static void main(String[] args) {
+String s="Java";
+char c = s.charAt(10);
+System.out.println(c);
+}
+}
+Output:
+Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String index out of range: 10
+at java.lang.String.charAt(Unknown Source)
+at org.exception.Exception.main(Exception.java:8)
+6. IndexOutOfBoundExcepion:
+¾ In a list, the index value is not available it will throw index out of bound exception.
+Example Program:
+public class Exception {
+public static void main(String[] args) {
+List<Integer> ex = new ArrayList<Integer>();
+ex.add(10);
+ex.add(20);
+ex.add(30);
+ex.add(40);
+System.out.println(ex.get(3));
+System.out.println(ex.get(10));
+}
+}
+Output:
+40
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index: 10, Size: 4
+at java.util.ArrayList.rangeCheck(Unknown Source)
+at java.util.ArrayList.get(Unknown Source)
+at org.exception.Exception.main(Exception.java:16)
+
+Page
+64
+7. NumberFormatException:
+¾ if we give numbers in the string, we can convert the data type into integer. but if we give num and
+char combination in the string, we can't convert to integer.
+¾ if we trying to convert, it will throw number format exception
+Example Program:
+public class Exception {
+public static void main(String[] args) {
+String s="1234";
+System.out.println(s+5);// string +5
+int i = Integer.parseInt(s);
+System.out.println(i+5);// Integer +5
+ String s1="123Abc45";
+int j = Integer.parseInt(s1);
+System.out.println(j+5);
+}
+}
+Output:
+12345
+1239
+Exception in thread "main" java.lang.NumberFormatException: For input string: "123Abc45"
+at java.lang.NumberFormatException.forInputString(Unknown Source)
+at java.lang.Integer.parseInt(Unknown Source)
+at java.lang.Integer.parseInt(Unknown Source)
+at org.exception.Exception.main(Exception.java:13)
+Exception Handling:
+1. Try
+2. Catch
+3. Finally
+4. Throw
+5. Throws
+
+Page
+65
+Errors:
+1. Network error
+2. JVM crack
+3. out of memory
+4. stack overflow
+Try and catch:
+¾ If we get exception, try will throw the exception and catch will catch the exception
+Example Program:
+public class Exception {
+public static void main(String[] args) {
+System.out.println("start");
+System.out.println("1");
+System.out.println("2");
+System.out.println("3");
+try {
+System.out.println(10/0);}
+catch(ArithmeticException e){
+System.out.println("dont/by zero");
+}
+System.out.println("4");
+System.out.println("5");
+System.out.println("end");
+}
+}
+Output:
+start
+1
+2
+3
+dont/by zero
+4
+5
+end
+¾ Here we can enter the same exception or super class of the exception
+
+Page
+66
+(i.e)
+¾ Super class of the all unexpected exception is run time exception/exception
+¾ Super class of exceptionÆ throwable
+¾ So we can use runtime exception/exception/throwable instead of the particular exception
+Example Program:
+we can use throwable
+try {
+ System.out.println(10/0);}
+ catch(Throwable e){
+ System.out.println("dont/by zero");
+ }
+instead of
+try {
+System.out.println(10/0);}
+catch(ArithmeticException e){
+System.out.println("dont/by zero");
+}
+Finally:
+¾ finally will execute always whether the exception through or not
+¾ We can give the combination like tryÆcatchÆfinally, we can't reverse/interchange
+¾ If we give tryÆfinally, again it will show the exception
+Example Program:
+public class Exception {
+public static void main(String[] args) {
+System.out.println("start");
+System.out.println("1");
+System.out.println("2");
+System.out.println("3");
+try {
+System.out.println(10/0);}
+catch(ArithmeticException e){
+System.out.println("dont/by zero");
+}finally{
+System.out.println("final");
+}
+System.out.println("4");
+System.out.println("5");
+System.out.println("end");}}
+
+Page
+67
+Output:
+start
+1
+2
+3
+dont/by zero
+final
+4
+5
+end
+¾ Even if exception not through, finally will print
+Example program:
+public class Exception {
+public static void main(String[] args) {
+System.out.println("start");
+System.out.println("1");
+System.out.println("2");
+System.out.println("3");
+try {
+System.out.println(10/0);}
+catch(NullPointerException e){
+System.out.println("dont/by zero");
+}finally{
+System.out.println("final");
+}
+System.out.println("4");
+System.out.println("5");
+System.out.println("end");
+}
+}
+Output:
+start
+1
+2
+3
+final
+
+Page
+68
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+at org.exception.Exception.main(Exception.java:11)
+¾ In between try ,catch and finally, we won't write any logics
+¾ In one try block we can use n-number of catch blocks but we can't repeat the same exception
+¾ In one try block we can handle only one exception
+Example Program:
+public class Exception {
+public static void main(String[] args) {
+System.out.println("start");
+System.out.println("1");
+System.out.println("2");
+System.out.println("3");
+try {
+System.out.println(10/0);}
+catch(NullPointerException e){
+System.out.println("null point");
+}
+catch(ArithmeticException e) {
+System.out.println("dont/by zero");
+}
+finally{
+System.out.println("final");
+}
+System.out.println("4");
+System.out.println("5");
+System.out.println("end");
+}
+}
+Output:
+start
+1
+2
+3
+dont/by zero
+final
+4
+5
+end
+¾ In a try block, one catch we can use same excepion and another catch we use throwable exception
+
+Page
+69
+¾ At this time, it will through the first one if it is match, will print. if it is not correct will throw the
+second
+¾ throwable is the super class of all exception
+¾ In more than one catch block, we can use like sub class and super class combination. But we can't
+use reverse
+sub classÆ ArithmaticException, NullPointException,.....
+super classÆThrowable/Exception
+¾ if we give Super class and sub class combination, it will give compilation error
+Example Program:
+public class Exception {
+public static void main(String[] args) {
+System.out.println("start");
+System.out.println("1");
+System.out.println("2");
+System.out.println("3");
+try {
+System.out.println(10/0);}
+catch(NullPointerException e){
+System.out.println("null point");
+}
+catch(Throwable e) {
+System.out.println("dont/by zero");
+}
+finally{
+System.out.println("final");
+}
+System.out.println("4");
+System.out.println("5");
+System.out.println("end");
+}
+}
+Output:
+start
+1
+2
+3
+dont/by zero
+final
+4
+
+Page
+70
+5
+end
+Example Program:
+try {
+System.out.println(10/0);}
+catch(Throwable e) {
+System.out.println("dont/by zero");
+}
+catch(NullPointerException e){
+System.out.println("null point");
+}
+finally{
+System.out.println("final");
+}
+¾ If we give like above, will get compile time exception/error because we can't reverse
+¾ In one try block, we can write only one finally block
+Inner try:
+¾ If we use inner try, it will print inner catch, inner finally and outer finally.
+¾ But one try block handle one exception only, even if we use inner try also
+¾ If main try have no exception, it will through inner try. in that inner try if catch exception is
+wrong, it will goes and print outer finally
+Example Program:
+public class Exception {
+public static void main(String[] args) {
+System.out.println("start");
+System.out.println("1");
+System.out.println("2");
+System.out.println("3");
+try {
+System.out.println(10/0);
+try {
+String s=null;
+System.out.println(s.charAt(0));
+}catch(NullPointerException e){
+System.out.println("inner catch");
+}finally{
+System.out.println("inner finally");
+}
+
+Page
+71
+}
+catch(ArithmeticException e) {
+System.out.println("dont/by zero");
+}
+finally{
+System.out.println("outer finaly");
+}
+System.out.println("4");
+System.out.println("5");
+System.out.println("end");
+}
+}
+Output:
+start
+1
+2
+3
+dont/by zero
+outer finaly
+4
+5
+end
+Example Program:
+public class Exception {
+public static void main(String[] args) {
+System.out.println("start");
+System.out.println("1");
+System.out.println("2");
+System.out.println("3");
+try {
+System.out.println(10/2);
+try {
+String s=null;
+System.out.println(s.charAt(0));
+}catch(NullPointerException e){
+System.out.println("inner catch");
+}finally{
+System.out.println("inner finally");
+}
+}
+catch(ArithmeticException e) {
+System.out.println("dont/by zero");
+}
+
+Page
+72
+finally{
+System.out.println("outer finaly");
+}
+System.out.println("4");
+System.out.println("5");
+System.out.println("end");
+}
+}
+Output:
+start
+1
+2
+3
+5
+inner catch
+inner finally
+outer finaly
+4
+5
+end
+Throw and Throws:
+Throw:
+¾ Throw is a keyword, we can through any exception inside the method
+¾ At a time we can throw only one exception
+Throws:
+¾ Throws is a keyword, it is used to declare the exception(in method level)
+¾ At a time we can declare more than one exception
+Example Program:
+public class Exception {
+public static void main(String[] args) throws InterruptedException,
+ArithmeticException,IOException{
+info();
+}
+private static void info() throws IOException {
+System.out.println("hello");
+throw new IOException();
+}
+¾ If we try to throws the compile time exception in any method, we must handle it in compile time
+
+Page
+73
+Example Program:
+public class Exception {
+public static void main(String[] args) throws InterruptedException,
+ArithmeticException,IOException{
+info();
+}
+private static void info() throws IOException {
+System.out.println("hello");
+throw new IOException();
+}
+Constructor:
+¾ Class name and constructor name must be same.
+¾ It doesn¶t have any return type.
+¾ We don¶t Zant to call constructor Zhich is creating object itself.
+¾ It will automatically invoke the default constructor.
+¾ It Zill support in method oYerloading but Zon¶t support in method oYerriding
+Example :
+public class Const1 {
+public Const1() {
+System.out.println("i am in constructor");
+}
+public Const1(int a) {
+System.out.println("1 argument int");
+}
+private void Const1(int i) {
+System.out.println(i);
+}
+public static void main(String[] args) {
+Const1 c = new Const1();
+Const1 c1 = new Const1(10);
+c.Const1(10);
+}
+}
+Here,
+public Const1() ÆNon- Argument based constructor
+
+Page
+74
+public Const1(int a) Æ Argument based constructor
+¾ In argument base constructor we have to pass the argument in object
+Const1 c1=new Const1(10);
+¾ In non-argument base constructor Ze don¶t Zant to pass an\ argument
+Const1 c=new Const1();
+Output:
+i am in constructor
+1 argument int
+10
+This:
+¾ It is a keyword.
+¾ If Ze use µthis¶ argument , Ze can pass Zithout object
+¾ This argument we must use only in first statement
+Example 1:
+public class Const1 {
+public Const1() {
+this(10);
+System.out.println("i am in constructor");
+}
+public Const1(int a){
+System.out.println("1 argument int");
+}
+public static void main(String[] args) {
+Const1 c=new Const1();
+}
+}
+sOutput:
+1 argument int
+i am in constructor
+
+Page
+75
+EXAMPLE 2:
+public class sample {
+ public sample(){
+this(10);
+System.out.println("i am in constructor");
+}
+public sample(int i) {
+this(23.23f);
+System.out.println("am integer constructor");
+}
+public sample(float f) {
+System.out.println("am float constructor");
+}
+public static void main(String[] args) {
+sample s=new sample();
+}
+}
+Output:
+am float constructor
+am integer constructor
+i am in constructor
+¾ If we trying to declare any variable without value in class level. It will print
+the default value
+public class sample {
+int id;
+¾ Inside the method, we must initialize the local variable otherwise we get
+compile time error
+public class sample {
+int id=10;
+private void num() {
+int id=100;
+System.out.println(id);
+}
+Output: 100
+¾ If same variable name in local level and class level, it will give first preference
+is local level
+
+Page
+76
+This():
+Class level:
+¾ It will refer the class level variable value
+Example:
+public class sample {
+int id=100;
+private void num() {
+System.out.println(id);
+}
+public static void main(String[] args) {
+sample s=new sample();
+s.num();
+}}
+Output:
+ 100
+Method level access of this();
+:LWKRXW WKLV():
+public class Const1 {
+ int id=100;
+private void num() {
+ int id=10;
+ System.out.println(id);
+}
+public static void main(String[] args) {
+Const1 s=new Const1();
+s.num();
+}
+}
+OXWSXW:
+10
+:LWK WKLV():
+public class sample {
+int id=100;
+private void num() {
+int id=10;
+System.out.println(this.id);
+}
+public static void main(String[] args) {
+sample s=new sample();
+s.num();
+}
+}
+OXWSXW:
+100
+
+Page
+77
+Super :
+¾ It will refer the parent class level variable value
+ Class 1: Class 2:
+Output:
+ 30
+Final:
+¾ It¶s a keyword.
+¾ If Ze use final before the Yariable, Ze can¶t oYerZrite.
+¾ If we trying to overwrite it show compile time error.
+¾ As Zell as if Ze use final before the method/class, Ze can¶t e[tend.
+¾ We can use final in three ways,
+ Variable level
+ Method level
+ Class level
+Variable level using final:
+¾ We can overwrite the value of variable on variable declaration.
+¾ If Ze final, the Yalue of Yariable can¶t be oYerZrite.
+public class Const1 {
+int id =30;
+}
+public class sample extends Const1 {
+int id=100;
+private void num() {
+int id=10;
+System.out.println(super.id);
+}
+public static void main(String[] args) {
+sample s=new sample();
+s.num();
+}
+}
+
+Page
+78
+Example:
+Without using final: With using final
+Method level using final():
+Class 1:
+public class sample {
+public final void example() {
+}
+}
+Class 2:
+public class Const1 extends sample {
+public void example(){ // we get compile time error here, because if we use final in
+method level(parent class), we can't use again
+}
+}
+¾ We get compile time error, because we using final in method level
+¾ We can¶t oYer ride Zhile using final
+Class level :
+¾ If we are using final in class leYel , Ze can¶t e[tends to an\Zhere
+public final class sample {
+}
+public class sample {
+public static void main(String[] args) {
+int a=10;
+ a=20;
+System.out.println(a);
+}
+}
+Output:
+20
+public class sample {
+public static void main(String[] args) {
+final int a=10;
+ a=20;
+System.out.println(a);
+}
+}
+output:
+¾ We get compile time error.
+¾ if Ze use final , Ze can¶t oYerZrite
+
+Page
+79
+JAVA INTERVIEW QUESTIONS:
+1. What is the difference between JDK, JRE and JVM?
+¾ JDK: Java Development Kit
+x JDK is a software, it contains JRE and JVM
+x If we run any applications, JDK have to installed
+¾ JRE: Java Runtime Environment
+x It is a predefined .class files(i.e.) library files
+¾ JVM: Java Virtual Machine
+x It is mainly used to allocate the memory and compiling
+2. What is meant by class, method and objects?
+¾ CLASS:
+x Class is nothing but collection of methods or collection of objects.
+¾ METHOD:
+x A set of action to be performed
+¾ OBJECT:
+x Run time memory allocation
+x Using object we can call the any methods
+3. What is meant by Encapsulation?
+¾ Structure of creating folder is called encapsulation
+4. What is the use of inheritance and its types?
+¾ Inheritance is used to reduce the object memory
+¾ We can access one class property into another class using 'extend' keyword is called
+inheritance
+¾ Reusable purpose
+¾ It has 5 types
+1. Single Inheritance
+2. Multilevel Inheritance
+3. Multiple Inheritance
+4. Hybrid Inheritance
+5. Hierarchical Inheritance
+
+Page
+80
+1. Single Inheritance:
+¾ One parent class is directly support into one child class using extend keyword
+2. Multilevel Inheritance:
+¾ More than one parent class support into one child class using extends keyword
+3. Multiple Inheritance:
+¾ More than one parent class parallely support into one child class but it won't support in
+java because
+x Priority problem
+x Compilation error/syntax error
+ (i.e.) if both parent class having same method name it gets priority problem so it
+doesn't work in java
+¾ but multiple inheritance support in java using interface
+4. Hybrid inheritance:
+¾ Itǯs a combination of single and multiple inheritance
+5. Hierarchical Inheritance:
+¾ One parent class directly support into more than one child class
+5. What is meant by java? why we go for java??
+1. Java is a simple programing language
+2. Writing, compilation and debugging a program is very easy in java
+3. It helps to create reusable code
+4. Java has more features,
+1.platform independent
+2.open source
+3.multithreading
+4.more secure
+5.portable
+1. Platform independent:
+¾ During the compilation the java program converts into byte code
+¾ Using byte code we can run the application to any platform such as windows, mac,
+Linux.Etc.
+2. Open source:
+¾ A program in which source code is available to the general public for use and/or
+modification from its original design at free of cost is called open source
+3. Multithreading:
+¾ Java supports multithreading
+¾ It enables a program to perform several task simultaneously
+4. More secure:
+¾ It provides the virtual firewall between the application and the computer
+¾ So itǯs doesn̵t grant unauthorized access
+
+Page
+81
+5. Portable:
+¾ "Write once Run anywhere"
+¾ Java code written in one machine can run on another machine
+6. What is meant by garbage collection??
+¾ Automatic De- allocation of objects is called garbage collection.
+7. What is the difference between while and do while?
+¾ While:
+x Entry level condition checking
+¾ Do. While:
+x Exit level condition checking
+x Even if condition fails, it print one time
+8. What is the difference between break and continue??
+¾ Break:
+x It exit from the current loop
+¾ Continue:
+x It will skip the particular iteration
+9. What is the use of polymorphism??
+¾ PolyÆmany
+¾ MorphismÆforms
+¾ Taking more than one forms is called polymorphism
+¾ One task is completed by many ways
+
+Page
+82
+10. What is the difference between method overloading and
+method over hiding?
+Method overloading :( static binding/compile time polymorphism)
+¾ In a same class method name is same and the argument is different is called method
+overloading
+¾ The argument is depends on
+¾ data types
+¾ data types count
+¾ data type order
+Method overriding :( dynamic binding/run time polymorphism)
+¾ In a different class , the method name should be same and argument name should be same
+is called overriding
+11. What is meant by abstraction??
+¾ Hiding the implementation part is called abstraction
+¾ It has 2 types,
+1. Partially abstraction(abstract class)
+2. Fully abstraction(interface)
+12. What is the difference between abstract class and interface??
+Abstract class:
+¾ It is partially abstraction
+¾ It support both abstract method and non-abstract method
+¾ Its using "extends" keyword
+¾ Here "public abstract" have to mention
+¾ We can use whatever access specifier we want
+Interface:
+¾ It is fully abstraction
+¾ It support only abstract method
+¾ Itǯs using ̶implement̶ keyword
+¾ "Public Abstract" is default. no need to mention
+¾ Here only use public( access specifier)
+
+Page
+83
+13. What is the super class of java??
+¾ Object
+14. What is default package of java??
+¾ java.lang
+15. Define heap memory???
+¾ The objects are stored in the heap memory
+16. What is meant by wrapper class and uses??
+¾ Classes of data types is called wrapper class
+¾ It is used to convert any data types into objects
+17. What is meant by string????
+¾ Collections of character or word enclosed with double quotes is called string
+18. What is the difference between literal and non-literal string???
+Literal String:
+¾ Its stored inside the heap memory(string pool or string constant).
+¾ It share the memory if same value (duplicate value)
+Non literal string:
+¾ Itǯs stored in the heap memoryǤ
+¾ its create a new memory every time even if its duplicate value(same value)
+19. Define oops concept,
+¾ Object Oriented Programing Structure
+¾ OOPS is a method of implementation in which programs are organized as collection of objects, class
+and methods
+¾ Oops principles are
+1. Class
+2. Method
+3. Object
+
+Page
+84
+4. Abstraction
+5. Encapsulation
+6. Inheritance
+7. Polymorphism
+20. What is meant by interface??
+Interface:
+¾ It will support only abstract method, won't support non abstract method
+¾ In interface "public abstract" is default. we no need to mention
+¾ It using implements keywords
+¾ It is fully abstraction
+21. Define abstraction:
+ABSTRACTION:
+¾ Hiding the implementation part is called abstraction
+¾ It has 2 types,
+1. Partially abstraction(abstract class)
+2. Fully abstraction(interface)
+1. Partially Abstraction(Abstract class):
+22. variable??
+¾ Long-8
+23. What is the size of short variable??
+¾ Short-2
+24. What is the size of int variable??
+¾ Int-4
+
+Page
+85
+25. Define access specifier & its types??
+ACCESS SPECIFIER:
+1. Public
+2. Protected
+3. Default
+4. Private
+1. Public:
+¾ It is global level access( same package + different package)
+2. Private:
+¾ It is a class level access
+3. Default :
+¾ Package level access
+¾ Without access specifier within the package we can access
+EX,
+¾ public staticÆ public acces specifier( need to mention public)
+¾ private staticÆ private access specifier( need to mention)
+¾ staticÆ default access secifier( need not)
+4. Protected:
+¾ Inside package + outside Package( Extends)
+¾ we can access inside package and outside package using extend keyword
+26. What is meant by polymprphism???
+POLYMORPHISM:
+¾ Poly-many
+¾ Morphism-forms
+¾ Taking more than one forms is called polymorphism.
+¾ One task is completed by many ways
+¾ It has 2 types,
+1. Method overloading (static binding/compile time polymorphism)
+2. Method overriding (dynamic binding/run time polymorphism)
+1. Method overloading:
+¾ In a same class method name is same and the argument is different is
+called method overloading
+
+Page
+86
+¾ The argument is depends on
+¾ Data types
+¾ Data types count
+¾ Data type order
+2. Method overriding:
+¾ In a different class , the method name should be same and argument name
+should be same is called overriding
+27. What is array??
+¾ Collection of similar data
+¾ The values are stored based on index
+¾ The index will start from 0 to n-1
+28. What is difference between hashmap and hashtable?
+HashMap:
+¾ Key allows single null
+¾ Asynchronies(not thread safe)
+Hashtable:
+¾ Key and value won't allow null
+¾ Synchronize(thread safe)
+29. What is the difference between linked list and array list?
+ArrayList: Worst case
+¾ In ArrayList deletion and insertion is a worst one because if we
+delete/insert one index value after the entire index move to
+forward/backward.
+¾ It makes performance issue.
+ArrayList: Best case
+¾ In arraylist retrieve/searching is a best one
+¾ For ex we have 100 index is there, if we going to print 60th value, we can
+easily search
+LinkedList: Best case
+¾ Insertion and deletion is a best one because
+
+Page
+87
+¾ Here all values based on the separate nodes. So, here we can easily
+delete/insert one value(i.e.) if we delete one value, the next node will
+join to the previous one
+LinkedList: Worst case
+¾ Searching/retrieving is a worst
+¾ For exǡ if we have ͳͲͲ nodesǡ we have to print ͻͲth node valueǡ itǯs
+communicate all the previous nodes and comes to first and then it will
+print.
+¾ Itǯs makes performance issue
+30. Can we able to write any logic in interface?
+¾ No. In class only we can write
+31. What is the difference between mutable and immutable string?
+Immutable string:
+¾ We can store more duplicate value in same memory
+¾ We can't change the value in memory
+¾ In concord nation, we have to create new memory
+Mutable string:
+¾ We can't store duplicate value in same memory
+¾ We can change the value in memory
+¾ In concord nation, its takes same memory
+32. What is the difference between thread safe and non-thread
+safe?
+Thread safe:
+¾ synchronize we can access one by one
+¾ ex. ticket booking
+Non-thread safe:
+¾ Asynchronies parallaly we can access
+33. List will allow duplicate value?
+¾ Yes. it will allow
+
+Page
+88
+34. What are all coding standards available in java? Where we use
+it?
+Coding standards:
+a. Pascal notation
+b. Camel notation
+¾ Pascal notation: Each word of first letter should be in capital
+¾ Camel notation : First word should be small after every word of the first letter should be
+capital
+¾ Pascal notation:
+1. Project name
+2. Class name
+¾ Camel notation :
+1. Method name
+2. Variable name
+35. What is NullPointException?
+¾ If we give Null in the string, it will throw the Null point exception. Because default value of
+string is Null.
+36. What is meant by List and set?
+List:
+¾ It is all insertion order
+¾ It allows duplicate value
+¾ It is index based
+Set:
+¾ It is not maintaining any order(i.e.)
+ HashsetÆ Random order
+ LinkedHashsetÆInsertion order
+ TreesetÆ Ascending order
+¾ It is value based
+¾ it will not allow duplicate value
+37. How will you iterate map?
+¾ Using entrySet() method we can iterate the map
+
+Page
+89
+38. What is the difference between ArrayList and Vector ?
+ArrayList:
+¾ Asynchronies
+¾ It is not a thread safe
+Vector:
+¾ Synchronize
+¾ Thread safe
+Here,
+SynchronizeÆ One by one (thread safe)
+AsynchroniesÆ Paralally(not thread safe)
+Ex, ticket booking,
+39. Define map?
+¾ It is key and value pair
+¾ Here key + value is a one entry
+¾ Key ignore the duplicate value and value allow the duplicate
+¾ It has 5 types
+x Hashmap(c)
+x Linked hashmap(c)
+x Treemap(c)
+x Hashtable(c)
+x Concurrent hashmap(C)
+40. Define generics?
+¾ It will support particular datatypes or object only
+¾ It is a one of the features of JDK 1.5
+¾ In the generics, we can mention only wrapper class
+¾ <> it is a generic symbol. it is used to define the particular data type
+¾ If we need integer data type,
+¾ Syntax:
+List<Integer> ex=new ArrayList<Integer>();
+
+Page
+90
+41. What is the difference between throw and throws?
+Throw:
+¾ Throw is a keyword, we can through any exception inside the method
+¾ At a time we can throw only one exception
+Throws:
+¾ Throws is a keyword, it is used to declare the exception(in method level)
+¾ At a time we can declare more than one exception
+42. What is the difference between hashset,linked hashset and
+treeset
+Hashset:
+¾ It will print random order
+¾ It will allow single Null value but wonǯt allow duplicate Null
+Linked hashset:
+¾ It will print insertion order
+¾ It will allow single Null value but wonǯt allow duplicate Null
+Treeset:
+¾ It will print ascending order
+¾ Treeset wonǯt allow Null value
+43. How many null values allow in treeset?
+¾ Treeset wonǯt allow Null value
+44. What is the super class of all exceptions?
+¾ Throwable
+45. What is the difference between equal and double equals?
+¾ = Æ It is used to assigning the value
+¾ == Æ It is used for condition checking
+
+Page
+91
+46. What is the difference between retain all and remove all?
+removeAll():
+¾ removeAll() is a method , it is used to compare the both list and remove all the list1 values in list
+2
+(i.e)
+list2 = list2-list1 or a = a-b
+retainAll():
+¾ retainAll() is a method, it is used to compare both list and print the common values
+47. How to create object for interface and abstract class?
+¾ We wonǯt create object for interface and abstract class.
+48. What are the advantages and dis advantages of arrays?
+Advantage of array:
+¾ In a single variable we can store multiple values
+Disadvantage of arrays:
+¾ It support only similar data types
+¾ It is a fixed size
+¾ Memory wastage is high
+¾ To overcome these we go for collections
+49. What is the difference between normal class and abstract class
+Abstract class:
+¾ It will support abstract method and non-abstract method
+¾ We wonǯt create object for abstract class
+¾ We wonǯt write any business logic in abstract method
+ Class:
+¾ It support only in non-abstract method
+¾ We can create object for class
+
+Page
+92
+50. Difference between final and finally?
+Final Finally
+1. A final class variable whose value cannot be
+changed.
+2. A final is declared as class level, they
+cannot be inherited.
+3. If final is declared as method level, they
+cannot be override.
+1. It¶s a block of statement that definitel\
+executes after the try catch block.
+2. If try block fails means, the final block will
+executes once.
+51. How to access one class property into another class?
+2 ways we can access
+1. by using extends keyword(inheritance)
+2. By creating object
+
+Page
+93
+ CORE JAVA PROGRAMS
+1. Sum of odd number(1 to 100):
+public class SumofOddNum {
+public static void main(String[] args) {
+int count = 0;
+for (int i = 1; i <= 100; i++) {
+if (i % 2 == 1) {
+count = count + i;
+}
+}
+System.out.println(count);
+}
+}
+Output:
+2500
+2. Sum of even number(1 to 100):
+public class SumofEvenNum {
+public static void main(String[] args) {
+int count = 0;
+for (int i = 1; i <= 100; i++) {
+if (i % 2 == 0) {
+count = count + i;
+}
+}
+System.out.println(count);
+}
+}
+Output:
+2550
+3. Count of odd number(1 to 100):
+public class CountOfOddNumber {
+public static void main(String[] args) {
+int count = 0;
+for (int i = 1; i <= 100; i++) {
+
+Page
+94
+if (i % 2 == 1) {
+count = count + 1;
+}
+}
+System.out.println(count);
+}
+}
+Output:
+50
+4. Count of even number(1 to 100):
+public class CountOfEvenNumbers {
+public static void main(String[] args) {
+int count = 0;
+for (int i = 1; i <= 100; i++) {
+if (i % 2 == 0) {
+count = count + 1;
+}
+}
+System.out.println(count);
+}
+}
+Output:
+50
+5. Factorial number:
+public class FactorialNumbers {
+public static void main(String[] args) {
+int count = 1;
+for (int i = 1; i <= 8; i++) {
+count = count * i;
+}
+System.out.println(count);
+}
+}
+Output:
+40320
+
+Page
+95
+6. Fibonacci series:
+public class Fibanacci {
+public static void main(String[] args) {
+int a = 0, b = 1;
+System.out.println(a);
+System.out.println(b);
+for (int i = 2; i <= 10; i++) {
+int c = a + b;
+System.out.println(c);
+a = b;
+b = c;
+}}}
+Output:
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+7. To find even/odd number:
+public class EvenoddNumber {
+public static void main(String[] args) {
+Scanner e = new Scanner(System.in);
+System.out.println("Enter a Number");
+int n = e.nextInt();
+if (n % 2 == 0) {
+System.out.println("Even number");
+} else {
+System.out.println("Odd number");
+}
+}
+}
+
+Page
+96
+Output:
+Enter a Number
+121
+Odd number
+8. Swapping numbers using third variable:
+public class SwappingNumbersWithVar {
+public static void main(String[] args) {
+int a, b, c;
+Scanner sw = new Scanner(System.in);
+System.out.println("The numbers are");
+a = sw.nextInt();
+b = sw.nextInt();
+c = a;
+a = b;
+b = c;
+System.out.println("swapping numbers are");
+System.out.println(a);
+System.out.println(b);
+}
+}
+Output:
+The numbers are
+25
+45
+swapping numbers are
+45
+25
+9. Swapping numbers without using third variable:
+public class SwappingNumWithoutVar {
+public static void main(String[] args) {
+int a, b;
+Scanner sw = new Scanner(System.in);
+
+Page
+97
+System.out.println("The numbers are");
+a = sw.nextInt();
+b = sw.nextInt();
+a = a + b;
+b = a - b;
+a = a - b;
+System.out.println("swapping numbers are");
+System.out.println(a);
+System.out.println(b);
+}
+}
+Output:
+The numbers are
+20
+40
+Swapping numbers are
+40
+20
+10.Reverse the number:
+public class Reversenumber {
+public static void main(String[] args) {
+Scanner rn = new Scanner(System.in);
+System.out.println("Enter a number");
+int n = rn.nextInt();
+int a, i = 0, j = 0;
+a = n;
+while (a > 0) {
+i = a % 10;
+j = (j * 10) + i;
+a = a / 10;
+}
+System.out.println("Reverse number is=" + j);
+}
+}
+
+Page
+98
+Output:
+Enter a number
+12345
+Reverse number is=54321
+11.To check palindrome number:
+public class PolyndromeNumberCheck {
+public static void main(String[] args) {
+int n, a, i = 0, j = 0;
+Scanner an = new Scanner(System.in);
+System.out.println("Enter a number");
+n = an.nextInt();
+a = n;
+while (a > 0) {
+i = a % 10;
+j = (j * 10) + i;
+a = a / 10;
+}
+if (n == j) {
+System.out.println("palindrome");
+} else {
+System.out.println("Not palindrome Number");
+}
+}
+}
+Output:
+Enter a number
+141
+palindrome
+12.To print palindrome number(1 to 100):
+public class PolyndromeNumbers {
+public static void main(String[] args) {
+for (int n = 1; n <= 100; n++) {
+int a, i = 0, j = 0;
+a = n;
+while (a > 0) {
+i = a % 10;
+
+Page
+99
+j = (j * 10) + i;
+a = a / 10;
+}
+if (n == j) {
+System.out.println(n);
+}
+}
+}
+}
+Output:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+11
+22
+33
+44
+55
+66
+77
+88
+99
+
+Page
+100
+13.To count palindrome number(1 to 1000):
+public class palindromeNum {
+public static void main(String[] args) {
+int c = 0;
+for (int n = 1; n <= 1000; n++) {
+int a, i = 0, j = 0;
+a = n;
+while (a > 0) {
+i = a % 10;
+j = (j * 10) + i;
+a = a / 10;
+}
+if (n == j) {
+c++;
+}
+}
+System.out.println(c);
+}
+}
+Output:
+108
+14.To check Armstrong number:
+public class ArmstrongNumberCheck {
+public static void main(String[] args) {
+int n, a, i = 0, j = 0;
+Scanner an = new Scanner(System.in);
+System.out.println("Enter a number");
+n = an.nextInt();
+a = n;
+while (a > 0) {
+i = a % 10;
+j = j + (i * i * i);
+a = a / 10;
+}
+if (n == j) {
+
+Page
+101
+System.out.println("Armstrong number");
+} else {
+System.out.println("Not armstrong Number");
+}
+}
+}
+Output:
+Enter a number
+153
+Armstrong number
+15.To print Armstrong number(1 to 1000):
+public class ArmstrongNumbers {
+public static void main(String[] args) {
+for (int n = 1; n <= 1000; n++) {
+int a, i = 0, j = 0;
+a = n;
+while (a > 0) {
+i = a % 10;
+j = j + (i * i * i);
+a = a / 10;
+}
+if (n == j) {
+System.out.println(n);
+}
+}
+}}
+Output:
+1
+153
+370
+371
+407
+
+Page
+102
+16.To count Armstrong number(1 to 1000):
+public class ArmsrongNumberCount {
+public static void main(String[] args) {
+int c = 0;
+for (int n = 1; n <= 1000; n++) {
+int a, i = 0, j = 0;
+a = n;
+while (a > 0) {
+i = a % 10;
+j = j + (i * i * i);
+a = a / 10;
+}
+if (n == j) {
+c++;
+}
+}
+System.out.println(c);
+}
+}
+Output:
+5
+17.Triangle program:
+public class Triangle {
+public static void main(String[] args) {
+for (int i = 1; i <= 5; i++) {
+for (int j = 1; j <= i; j++) {
+System.out.print("*");
+}
+System.out.println();
+}
+}
+}
+
+Page
+103
+Output:
+*
+**
+***
+****
+*****
+18.Reverse triangle:
+public class ReverseTriangle {
+public static void main(String[] args) {
+for (int i = 1; i <= 5; i++) {
+for (int j = 5; j >= i; j--) {
+System.out.print("*");
+}
+System.out.println();
+}
+}
+}
+Output:
+*****
+****
+***
+**
+*
+19.To check prime number:
+public class PrimeNumberChecking {
+public static void main(String[] args) {
+int n;
+Scanner input = new Scanner(System.in);
+System.out.println("enter the number");
+n = input.nextInt();
+int count = 0;
+for (int i = 2; i <= n / 2; i++) {
+
+Page
+104
+if (n % i == 0) {
+count = 1;
+}
+}
+if (count == 0) {
+System.out.println("prime");
+} else {
+System.out.println("not prime");
+}
+}
+}
+Output:
+enter the number
+17
+prime
+enter the number
+21
+not prime
+20.To print prime number(1 to 10):
+public class PrimeNumber {
+public static void main(String[] args) {
+int count;
+for (int i = 1; i <= 10; i++) {
+count = 0;
+for (int j = 2; j <= i / 2; j++) {
+if (i % j == 0) {
+count++;
+}
+}
+if (count == 0) {
+System.out.println(i);
+}
+}
+}
+}
+
+Page
+105
+Output:
+1
+2
+3
+5
+7
+21.To count prime number(1 to 100):
+public class PrimeNumberCount {
+public static void main(String[] args) {
+int count, c = 0;
+for (int i = 1; i <= 100; i++) {
+count = 0;
+for (int j = 2; j <= i / 2; j++) {
+if (i % j == 0) {
+count++;
+}
+}
+if (count == 0) {
+c++;
+}
+}
+System.out.println(c);
+}
+}
+Output:
+26
+22.Student grade:
+public class StudentsGrade {
+public static void main(String[] args) {
+Scanner sm = new Scanner(System.in);
+System.out.println("enter value:");
+int n = sm.nextInt();
+if (100 >= n && n >= 90) {
+System.out.println("S grade");
+} else if (89 >= n && n >= 80) {
+System.out.println("A grade");
+} else if (79 >= n && n >= 70) {
+
+Page
+106
+System.out.println("B grade");
+} else if (69 >= n && n >= 60) {
+System.out.println("C grade");
+}
+else if (59 >= n) {
+System.out.println("Fail");
+}
+}
+}
+Output:
+enter value:
+67
+C grade
+enter value:
+55
+Fail
+23.Multiplication table:
+public class MultiflicationTable {
+public static void main(String[] args) {
+int n, j;
+Scanner mt = new Scanner(System.in);
+System.out.println("Enter the Table");
+n = mt.nextInt();
+System.out.println("table upto");
+j = mt.nextInt();
+for (int i = 1; i <= j; i++) {
+int c = n * i;
+System.out.println(i + "*" + n + "=" + c);
+}
+}
+}
+
+Page
+107
+Output:
+Enter the Table
+6
+table upto
+10
+1*6=6
+2*6=12
+3*6=18
+4*6=24
+5*6=30
+6*6=36
+7*6=42
+8*6=48
+9*6=54
+10*6=60
+24. Biggest of 4 numbers:
+public class BiggestNumberUsingif {
+public static void main(String[] args) {
+int a, b, c, d;
+Scanner bn = new Scanner(System.in);
+System.out.println("The four numbers are");
+a = bn.nextInt();
+b = bn.nextInt();
+c = bn.nextInt();
+d = bn.nextInt();
+if (a > b && a > c && a > d) {
+System.out.println("the biggest number is=" + a);
+} else if (b > a && b > c && b > d) {
+System.out.println("the biggest number is=" + b);
+} else if (c > a && c > b && c > d) {
+System.out.println("the biggest number is=" + c);
+} else {
+System.out.println("the biggest number is=" + d);
+
+Page
+108
+}
+}
+}
+Output:
+The four numbers are
+23
+45
+56
+22
+The biggest number is=56
+25.Find vowels and non-vowels count
+public class VowelsCount {
+public static void main(String[] args) {
+String a = "welcome";
+int vowels = 0;
+ int nonVowels = 0;
+for (int i = 0; i < a.length(); i++) {
+char ch = a.charAt(i);
+if (ch == 'a' || ch == 'A' || ch == 'e' || ch == 'E' || ch == 'i'
+|| ch == 'I' || ch == 'o' || ch == 'O' || ch == 'u'
+|| ch == 'U') {
+ vowels++;
+} else {
+nonVowels++;
+}
+}
+System.out.println(vowels);
+System.out.println(nonVowels);
+}
+}
+Output:
+3
+4
+
+Page
+109
+26. Ascending order using array:
+public class Ascending {
+public static void main(String[] args)
+ {
+ int n, temp;
+ Scanner s = new Scanner(System.in);
+ System.out.print("Enter no. of elements you want in array:");
+ n = s.nextInt();
+ int a[] = new int[n];
+ System.out.println("Enter all the numbers:");
+ for (int i = 0; i < n; i++)
+ {
+ a[i] = s.nextInt();
+ }
+ for (int i = 0; i < n; i++)
+ {
+ for (int j = i + 1; j < n; j++)
+ {
+ if (a[i] > a[j])
+ {
+ temp = a[i];
+ a[i] = a[j];
+ a[j] = temp;
+ }
+ }
+ }
+ System.out.print("Ascending Order:");
+ for (int i = 0; i < n - 1; i++)
+ {
+ System.out.print(a[i] + ",");
+ }
+ System.out.print(a[n - 1]);
+} }
+Output:
+Enter no. of elements you want in array:6
+Enter all the numbers:
+10
+20
+100
+40
+200
+60
+Ascending Order: 10,20,40,60,100,200
+
+Page
+110
+27. Descending order using array:
+public class DescendingOrder {
+public static void main(String[] args) {
+int n, temp;
+Scanner s = new Scanner(System.in);
+System.out.print("Enter no. of elements you want in array:");
+n = s.nextInt();
+int a[] = new int[n];
+System.out.println("Enter all the elements:");
+for (int i = 0; i < n; i++) {
+a[i] = s.nextInt();
+}
+for (int i = 0; i < n; i++) {
+for (int j = i + 1; j < n; j++) {
+if (a[i] > a[j]) {
+temp = a[i];
+a[i] = a[j];
+a[j] = temp;
+}
+}
+}
+System.out.print("Descending Order:");
+for (int i = n - 1; i > 0; i--) {
+System.out.print(a[i] + ",");
+}
+System.out.print(a[0]);
+}
+}
+Output:
+Enter no. of elements you want in array:6
+Enter all the elements:
+10
+20
+100
+40
+200
+60
+Descending Order:200,100,60,40,20,10
+
+Page
+111
+28. Second minimum number:
+public class SecondMinimumNumber {
+public static void main(String[] args) {
+int a[]={-12,45,-23,64,-100,24};
+for(int i=0;i<a.length;i++){
+for(int j=i+1;j<a.length;j++){
+int temp=0;
+if(a[i]<a[j]){
+temp=a[j];
+a[j]=a[i];
+a[i]=temp;
+}
+}
+}
+for(int k=0;k<a.length;k++){
+System.out.println(a[k]);
+}
+System.out.println("The Second minimum number is" + a[a.length-2]
+);
+}
+}
+Output:
+64
+45
+24
+-12
+-23
+-100
+The Second minimum number is-23
+29. First maximum number :
+public class FirstLargest {
+public static void main(String[] args) {
+int a[]={-12,45,-23,64,-100,24};
+for(int i=0;i<a.length;i++){
+for(int j=i+1;j<a.length;j++){
+int temp=0;
+if(a[i]<a[j]){
+temp=a[j];
+a[j]=a[i];
+a[i]=temp;
+}
+}
+}
+for(int k=0;k<a.length;k++){
+System.out.println(a[k]);
+
+Page
+112
+}
+System.out.println("The First maximum number is" + a[a.length-6]
+);
+}
+}
+Output:
+64
+45
+24
+-12
+-23
+-100
+The First maximum number is64
+30. Third maximum number:
+public class ThirdLarge {
+public static void main(String[] args) {
+int a[]={-12,45,-23,64,-100,24};
+for(int i=0;i<a.length;i++){
+for(int j=i+1;j<a.length;j++){
+int temp=0;
+if(a[i]<a[j]){
+temp=a[j];
+a[j]=a[i];
+a[i]=temp;
+}
+}
+}
+for(int k=0;k<a.length;k++){
+System.out.println(a[k]);
+}
+System.out.println("The Third maximum number is" + a[a.length-4]
+); }}
+Output:
+64
+45
+24
+-12
+-23
+-100
+The Third maximum number is24
+
+Page
+113
+31. Count the Small ,Caps, number and Special character in string:
+package org.room.assign4;
+public class LettersCount {
+public static void main(String[] args) {
+String s = "Hi Welcome To Java Classes Tommorow At 2.00 p.m!!";
+int count = 0;
+int count1 = 0;
+int count2 = 0;
+int count3 = 0;
+for (int i = 0; i < s.length(); i++) {
+if (s.charAt(i) >= 'a' && s.charAt(i) <= 'z') {
+count++;
+} else if (s.charAt(i) >= 'A' && s.charAt(i) <= 'Z') {
+count1++;
+} else if (s.charAt(i) >= '0' && s.charAt(i) <= '9') {
+count2++;
+} else {
+count3++;
+}
+}
+System.out.println("total no of small letters:" + count);
+System.out.println("total no of capital letters:" + count1);
+System.out.println("total no of digits :" + count2);
+System.out.println("total no of special characters:" + count3);
+}
+}
+Output:
+total no of small letters:27
+total no of capital letters:7
+total no of digits :3
+total no of special characters:12
+32. Count of given number:
+package org.room.assign4;
+import java.util.Scanner;
+public class CountOfGivenNum {
+public static void main(String[] args) {
+
+Page
+114
+int n,i=0;
+System.out.println("enter a no");
+Scanner get=new Scanner(System.in);
+n=get.nextInt();
+while(n>0)
+{
+n=n/10;
+i++;
+}
+System.out.println("no of digits present:"+i);
+}
+}
+Output:
+enter a no
+5267546
+no of digits present:7
+33. Palindrome string:
+package org.room.assign4;
+import java.util.Scanner;
+public class PoyindromeString {
+public static void main(String args[])
+ {
+ String original, reverse = "";
+ Scanner in = new Scanner(System.in);
+ System.out.println("Enter a string to check if it is a palindrome");
+ original = in.nextLine();
+ int length = original.length();
+ for ( int i = length - 1; i >= 0; i-- )
+ reverse = reverse + original.charAt(i);
+ if (original.equals(reverse))
+ System.out.println("Entered string is a palindrome.");
+ else
+ System.out.println("Entered string is not a palindrome.");
+ }
+}
+
+Page
+115
+Output:
+Enter a string to check if it is a palindrome
+madam
+Entered string is a palindrome.
+34. Reverse the String:
+package org.room.assign4;
+import java.util.Scanner;
+public class ReverseString {
+public static void main(String args[]) {
+String original, reverse = "";
+Scanner in = new Scanner(System.in);
+System.out.println("Enter a string to reverse");
+original = in.nextLine();
+int length = original.length();
+for (int i = length - 1; i >= 0; i--)
+reverse = reverse + original.charAt(i);
+System.out.println("Reverse of entered string is: " + reverse);
+}
+}
+Output:
+Enter a string to reverse
+welcome
+Reverse of entered string is: emoclew
+35. Triangle with stars:
+package org.room.assign4;
+public class Triangle1 {
+public static void main(String[] args) {
+for (int i = 1; i <= 5; i++) {
+for (int j = 1; j <= 5 - i; j++) {
+System.out.print(" ");
+}
+for (int k = 1; k <= i; k++) {
+System.out.print("* ");
+}
+System.out.println(" ");}}}
+
+Page
+116
+Output:
+ *
+ * *
+ * * *
+* * * *
+* * * * *
+36. Sum of give num:
+package org.room.assign4;
+public class SumOfGivenNum {
+public static void main(String args[]) {
+int m, n, sum = 0;
+m = 12345;
+while (m > 0) {
+n = m % 10;
+sum = sum + n;
+m = m / 10;
+}
+System.out.println("Sum of Digits:" + sum);
+}
+}
+Output:
+Sum of Digits:15
+37. Count of each word in the string:
+public class Count {
+public static void main(String args[]) {
+{
+String s = "vengat ram";
+String[] s1 = s.split(" ");
+HashMap<String, Integer> emp = new HashMap<String, Integer>();
+for (String c : s1) {
+if (emp.containsKey(c)) {
+int x = emp.get(c);
+emp.put(c, x + 1);
+} else {
+emp.put(c, 1);
+}
+}
+System.out.println(emp);
+}
+
+Page
+117
+}
+}
+Output:
+{vengat=1, ram=1}
+38. Count of each character in the string:
+public class ReverseString {
+public static void main(String args[]) {
+{
+String s = "vengatram";
+HashMap<Character, Integer> emp = new HashMap<Character, Integer>();
+char[] ch = s.toCharArray();
+for (char c : ch) {
+if (emp.containsKey(c)) {
+int x = emp.get(c);
+emp.put(c, x + 1);
+} else {
+emp.put(c, 1);
+}
+}
+System.out.println(emp);
+}
+}
+}
+Output:
+{a=2, r=1, t=1, e=1, v=1, g=1, m=1, n=1}
+39. AVVXPH D VWULQJ ³ZHOFRPH WR PRODULV´ UHPRYH VSDFH DQG SULQW WKH VWULQJ.
+public class Dummy {
+public static void main(String[] args) {
+String s="Welcome to Polaris";
+String x = s.replace(" ", "");
+System.out.println(x);
+}
+}
+Output:
+WelcometoPolaris
+
+Page
+118
+40. Write a program to split and then reverse a string.
+Reverse the string:
+public class ReverseString {
+public static void main(String args[]) {
+String original, reverse = "";
+Scanner in = new Scanner(System.in);
+System.out.println("Enter a string to reverse");
+original = in.nextLine();
+int length = original.length();
+for (int i = length - 1; i >= 0; i--) {
+reverse = reverse + original.charAt(i); }
+System.out.println("Reverse of entered string is: " + reverse);
+}
+}
+Output:
+Enter a string to reverse
+HELLO
+Reverse of entered string is: OLLEH
+Split:
+public class StringBasic {
+public static void main(String[] args) {
+String s1 = "Hello welcome to java class";
+String[] x = s1.split(" "); // here we split by space
+for(int i=0;i<x.length;i++){
+System.out.println(x[i]);
+}
+}
+}
+Output:
+Hello
+welcome
+to
+java
+class
+
+Page
+119
+41. Construct the triangle
+ 9
+ 8 9 8
+ 7 8 9 8 7
+ 6 7 8 9 8 7 6
+ 5 6 7 8 9 8 7 6 5
+ 4 5 6 7 8 9 8 7 6 5 4
+ 3 4 5 6 7 8 9 8 7 6 5 4 3
+ 2 3 4 5 6 7 8 9 8 7 6 5 4 3 2
+ 1 2 3 4 5 6 7 8 9 8 7 6 5 4 3 2 1
+Program:
+public class ReverseString {
+public static void main(String[] args)
+ {
+ Scanner sc = new Scanner(System.in);
+ System.out.println("How Many Rows You Want In Your Pyramid?");
+ int noOfRows = sc.nextInt();
+ int rowCount = 1;
+ System.out.println("Here Is Your Pyramid");
+ for (int i = noOfRows; i >= 1; i--)
+ {
+ //Printing i*2 spaces at the beginning of each row
+ for (int j = 1; j <= i*2; j++)
+ {
+ System.out.print(" ");
+ }
+ //Printing j where j value will be from i to noOfRows
+ for (int j = i; j <= noOfRows; j++)
+ {
+ System.out.print(j+" ");
+ }
+ //Printing j where j value will be from noOfRows-1 to i
+
+ for (int j = noOfRows-1; j >= i; j--)
+ {
+ System.out.print(j+" ");
+
+Page
+120
+ }
+
+ System.out.println();
+ //Incrementing the rowCount
+ rowCount++;
+ }
+ }
+}
+Output:
+How Many Rows You Want In Your Pyramid?
+9
+Here Is Your Pyramid
+ 9
+ 8 9 8
+ 7 8 9 8 7
+ 6 7 8 9 8 7 6
+ 5 6 7 8 9 8 7 6 5
+ 4 5 6 7 8 9 8 7 6 5 4
+ 3 4 5 6 7 8 9 8 7 6 5 4 3
+ 2 3 4 5 6 7 8 9 8 7 6 5 4 3 2
+ 1 2 3 4 5 6 7 8 9 8 7 6 5 4 3 2 1
+42. Write a program to find sum of each digit in the given number using recursion?
+Program:
+public class MyNumberSumRec {
+ int sum = 0;
+
+ public int getNumberSum(int number){
+
+ if(number == 0){
+ return sum;
+ } else {
+ sum += (number%10);
+ getNumberSum(number/10);
+ }
+ return sum;
+
+Page
+121
+ }
+
+ public static void main(String a[]){
+ MyNumberSumRec a = new MyNumberSumRec();
+ System.out.println("Sum is: "+a.getNumberSum(5678));
+ }
+}
+Output:
+Sum is: 26
+43. Longest substring without repeating characters
+INPUT OUTPUT
+java2novice = a2novice
+java_language_is_sweet = uage_is
+java_java_java_java = va_j, _jav
+abcabcbb = bca, abc, cab
+program:
+public class MyLongestSubstr {
+ private Set<String> subStrList = new HashSet<String>();
+ private int finalSubStrSize = 0;
+
+ public Set<String> getLongestSubstr(String input){
+ //reset instance variables
+ subStrList.clear();
+ finalSubStrSize = 0;
+ // have a boolean flag on each character ascii value
+ boolean[] flag = new boolean[256];
+ int j = 0;
+ char[] inputCharArr = input.toCharArray();
+ for (int i = 0; i < inputCharArr.length; i++) {
+ char c = inputCharArr[i];
+ if (flag[c]) {
+ extractSubString(inputCharArr,j,i);
+ for (int k = j; k < i; k++) {
+ if (inputCharArr[k] == c) {
+ j = k + 1;
+ break;
+ }
+ flag[inputCharArr[k]] = false;
+
+Page
+122
+ }
+ } else {
+ flag[c] = true;
+ }
+ }
+ extractSubString(inputCharArr,j,inputCharArr.length);
+ return subStrList;
+ }
+
+ private String extractSubString(char[] inputArr, int start, int end){
+
+ StringBuilder sb = new StringBuilder();
+ for(int i=start;i<end;i++){
+ sb.append(inputArr[i]);
+ }
+ String subStr = sb.toString();
+ if(subStr.length() > finalSubStrSize){
+ finalSubStrSize = subStr.length();
+ subStrList.clear();
+ subStrList.add(subStr);
+ } else if(subStr.length() == finalSubStrSize){
+ subStrList.add(subStr);
+ }
+
+ return sb.toString();
+ }
+ public static void main(String a[]){
+ MyLongestSubstr mls = new MyLongestSubstr();
+ System.out.println(mls.getLongestSubstr("java2novice"));
+ System.out.println(mls.getLongestSubstr("java_language_is_sweet"));
+ System.out.println(mls.getLongestSubstr("java_java_java_java"));
+ System.out.println(mls.getLongestSubstr("abcabcbb"));
+ }
+}
+Output :
+[a2novice]
+[uage_is]
+[va_j, _jav]
+[bca, abc, cab]
+
+Page
+123
+44. Kth largest or smallest element in an array
+Example : if given array is [1,3,12,19,13,2,15] and you are asked for the 3rd largest
+element i.e., k=3 then your program should print 13
+Program:
+public class ThirdLarge {
+public static void main(String[] args) {
+int a[]={1,3,12,19,13,2,15};
+for(int i=0;i<a.length;i++){
+for(int j=i+1;j<a.length;j++){
+int temp=0;
+if(a[i]<a[j]){
+temp=a[j];
+a[j]=a[i];
+a[i]=temp;
+}
+}
+}
+for(int k=0;k<a.length;k++){
+System.out.println(a[k]);
+}
+System.out.println("The Third maximum number is :" + a[a.length-5] );
+}
+}
+Output:
+19
+15
+13
+12
+3
+2
+1
+The Third maximum number is :13
+45. Armstrong number:
+Program:
+public class ArmstrongNumberCheck {
+
+Page
+124
+public static void main(String[] args) {
+int n, a, i = 0, j = 0;
+Scanner an = new Scanner(System.in);
+System.out.println("Enter a number");
+n = an.nextInt();
+a = n;
+while (a > 0) {
+i = a % 10;
+j = j + (i * i * i);
+a = a / 10;
+}
+if (n == j) {
+System.out.println("Armstrong number");
+} else {
+System.out.println("Not armstrong Number");
+}
+}
+}
+Output :
+Enter a number
+371
+ Armstrong number
+46. Write a program to remove duplicates from sorted array
+Input : 2,3,6,6,9,10,10,10,12,12
+Output : 2,3,6,9,10,12
+Program:
+public class MyDuplicateElements {
+ public static int[] removeDuplicates(int[] input){
+
+ int j = 0;
+ int i = 1;
+ //return if the array length is less than 2
+
+Page
+125
+ if(input.length < 2){
+ return input;
+ }
+ while(i < input.length){
+ if(input[i] == input[j]){
+ i++;
+ }else{
+ input[++j] = input[i++];
+ }
+ }
+ int[] output = new int[j+1];
+ for(int k=0; k<output.length; k++){
+ output[k] = input[k];
+ }
+
+ return output;
+ }
+
+ public static void main(String a[]){
+ int[] input1 = {2,3,6,6,8,9,10,10,10,12,12};
+ int[] output = removeDuplicates(input1);
+ for(int i:output){
+ System.out.print(i+" ");
+ }
+ }
+}
+Output:
+2 3 6 8 9 10 12
+47. Binary search
+Program:
+public class MyBinarySearch {
+ public int binarySearch(int[] inputArr, int key) {
+
+ int start = 0;
+ int end = inputArr.length - 1;
+ while (start <= end) {
+ int mid = (start + end) / 2;
+ if (key == inputArr[mid]) {
+ return mid;
+
+Page
+126
+ }
+ if (key < inputArr[mid]) {
+ end = mid - 1;
+ } else {
+ start = mid + 1;
+ }
+ }
+ return -1;
+ }
+
+ public static void main(String[] args) {
+
+ MyBinarySearch mbs = new MyBinarySearch();
+ int[] arr = {2, 4, 6, 8, 10, 12, 14, 16};
+ System.out.println("Key 14's position: "+mbs.binarySearch(arr, 14));
+ int[] arr1 = {6,34,78,123,432,900};
+ System.out.println("Key 432's position: "+mbs.binarySearch(arr1, 432));
+ }
+}
+Output:
+Key 14's position: 6
+Key 432's position: 4
+48. Butterfly shuffle:
+Program:
+import java.util.ArrayList;
+import java.util.Scanner;
+public class SampleTest {
+public static void main(String[] args) {
+int a[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 };
+int len = a.length / 2;
+for (int i = len - 1; i >= 0; i--) {
+System.out.println(a[i]);
+}
+for (int i = a.length - 1; i >= len; i--) {
+System.out.println(a[i]);
+}
+}
+}
+
+Page
+127
+Output:
+5
+4
+3
+2
+1
+0
+9
+8
+7
+6
+[2m2026-05-03T08:30:44.087Z[0;39m [32mDEBUG[0;39m [35m5589[0;39m [2m--- [semantic-search] [0.0-5000-exec-9] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Generated embedding with dimension: 384
+[2m2026-05-03T08:30:45.403Z[0;39m [31mERROR[0;39m [35m5589[0;39m [2m--- [semantic-search] [0.0-5000-exec-9] [0;39m[36mc.e.demo.repository.PineconeRepository  [0;39m [2m:[0;39m Error upserting vector to Pinecone
+
+org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request on POST request for "https://semantic-384-1dsfvg7.svc.aped-4627-b74a.pinecone.io/vectors/upsert": "{"code":3,"message":"Metadata size is 104816 bytes, which exceeds the limit of 40960 bytes per vector","details":[]}"
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:106) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:144) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:119) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:807) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:756) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:677) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.client.RestTemplate.postForEntity(RestTemplate.java:430) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at com.example.demo.repository.PineconeRepository.upsertVector(PineconeRepository.java:61) ~[!/:0.0.1-SNAPSHOT]
+	at com.example.demo.service.SemanticSearchService.addDocument(SemanticSearchService.java:63) ~[!/:0.0.1-SNAPSHOT]
+	at com.example.demo.controller.SearchController.addDocument(SearchController.java:64) ~[!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.20.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+[2m2026-05-03T08:30:45.406Z[0;39m [31mERROR[0;39m [35m5589[0;39m [2m--- [semantic-search] [0.0-5000-exec-9] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Error adding document
+
+java.lang.RuntimeException: Failed to upsert vector to Pinecone
+	at com.example.demo.service.SemanticSearchService.addDocument(SemanticSearchService.java:66) ~[!/:0.0.1-SNAPSHOT]
+	at com.example.demo.controller.SearchController.addDocument(SearchController.java:64) ~[!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.20.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+[2m2026-05-03T08:30:45.407Z[0;39m [31mERROR[0;39m [35m5589[0;39m [2m--- [semantic-search] [0.0-5000-exec-9] [0;39m[36mc.e.demo.controller.SearchController    [0;39m [2m:[0;39m Error adding document
+
+java.lang.RuntimeException: Failed to add document: Failed to upsert vector to Pinecone
+	at com.example.demo.service.SemanticSearchService.addDocument(SemanticSearchService.java:73) ~[!/:0.0.1-SNAPSHOT]
+	at com.example.demo.controller.SearchController.addDocument(SearchController.java:64) ~[!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.20.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.lang.RuntimeException: Failed to upsert vector to Pinecone
+	at com.example.demo.service.SemanticSearchService.addDocument(SemanticSearchService.java:66) ~[!/:0.0.1-SNAPSHOT]
+	... 44 common frames omitted
+
+[2m2026-05-03T08:32:16.519Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [0.0-5000-exec-1] [0;39m[36mc.e.demo.controller.SearchController    [0;39m [2m:[0;39m Received ask request
+[2m2026-05-03T08:32:16.519Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [0.0-5000-exec-1] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Top-3 search for query: what is document db
+[2m2026-05-03T08:32:16.524Z[0;39m [32mDEBUG[0;39m [35m5589[0;39m [2m--- [semantic-search] [0.0-5000-exec-1] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Generated embedding with dimension: 384
+[2m2026-05-03T08:32:49.117Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [0.0-5000-exec-4] [0;39m[36mc.e.demo.controller.SearchController    [0;39m [2m:[0;39m Received ask request
+[2m2026-05-03T08:32:49.117Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [0.0-5000-exec-4] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Top-3 search for query: what is document db
+[2m2026-05-03T08:32:49.121Z[0;39m [32mDEBUG[0;39m [35m5589[0;39m [2m--- [semantic-search] [0.0-5000-exec-4] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Generated embedding with dimension: 384
+[2m2026-05-03T08:34:09.283Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [0.0-5000-exec-3] [0;39m[36mc.e.demo.controller.SearchController    [0;39m [2m:[0;39m Received request to add document
+[2m2026-05-03T08:34:09.284Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [0.0-5000-exec-3] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Adding document with text: give me dtsil about the java
+
+“Java” is a huge topic, so I’ll give you a clear, interview-ready overview—not boring theory, but how things actually connect 👇
+
+🚀 What is Java?
+Java is a high-level, object-oriented programming language designed to be:
+
+Platform-independent → Write Once, Run Anywhere (WORA)
+
+Secure
+
+Robust
+
+Widely used in backend systems
+
+It was created by James Gosling at Sun Microsystems (now owned by Oracle Corporation).
+
+⚙️ How Java Works (Core Concept)
+Java is not directly compiled to machine code like C++.
+
+Flow:
+You write code → .java
+
+Compiler (javac) → converts to bytecode (.class)
+
+Bytecode runs on → Java Virtual Machine
+
+👉 That’s why it runs on any system with JVM.
+
+🧠 Java Architecture
+1. JVM (Java Virtual Machine)
+Executes bytecode
+
+Handles memory, garbage collection
+
+Platform dependent
+
+2. JRE (Java Runtime Environment)
+JVM + libraries needed to run Java programs
+
+3. JDK (Java Development Kit)
+JRE + tools (compiler, debugger)
+
+👉 Simple:
+
+JDK > JRE > JVM
+🔑 Key Features of Java
+1. Object-Oriented (OOP)
+Everything revolves around objects.
+
+Core pillars:
+
+Encapsulation
+
+Inheritance
+
+Polymorphism
+
+Abstraction
+
+2. Platform Independent
+Because of JVM → same code runs everywhere.
+
+3. Automatic Memory Management
+Uses Garbage Collector
+👉 No manual memory handling like C++
+
+4. Multithreading
+Run multiple tasks simultaneously
+
+Used in backend systems, servers
+
+5. Strongly Typed & Secure
+Type checking at compile time
+
+No pointer manipulation (safe)
+
+🏗️ Basic Structure of Java Program
+class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
+}
+Breakdown:
+class → blueprint
+
+main() → entry point
+
+System.out.println() → print output
+
+📦 Important Concepts (Interview Gold)
+1. OOP Example
+class Car {
+    String name;
+
+    void drive() {
+        System.out.println(name + " is driving");
+    }
+}
+2. Constructor
+Car(String name) {
+    this.name = name;
+}
+3. Inheritance
+class BMW extends Car {
+}
+4. Polymorphism
+void drive() {
+    System.out.println("Driving...");
+}
+5. Abstraction
+Using abstract class or interface
+
+🔥 Real-World Uses of Java
+Java is everywhere:
+
+Backend APIs (Spring Boot)
+
+Android apps
+
+Banking systems
+
+Enterprise applications
+
+Big data tools (Hadoop)
+
+🧰 Popular Java Frameworks
+Spring Boot → backend APIs
+
+Hibernate → database mapping
+
+Apache Maven → dependency management
+
+⚡ Why Companies Love Java
+Scalable (used by banks, fintech)
+
+Secure
+
+Huge ecosystem
+
+Mature + stable
+
+⚠️ Downsides
+Verbose (more code)
+
+Slightly slower than C++
+
+Memory heavy
+
+🧠 Pro Insight (For Interview)
+If interviewer asks:
+
+👉 “Why Java still relevant?”
+
+Answer:
+
+Strong ecosystem (Spring, microservices)
+
+JVM optimizations (very fast now)
+
+Huge enterprise adoption
+
+Backward compatibility
+
+🎯 If You Want Next Level
+I can go deeper into:
+
+🔥 Spring Boot (your backend focus)
+
+🔥 JVM internals (heap, stack, GC)
+
+🔥 Multithreading (very important)
+
+🔥 Interview questions with answers
+
+Just tell me:
+👉 “Teach me Java for backend interviews” or “Explain JVM deeply”
+[2m2026-05-03T08:34:09.307Z[0;39m [32mDEBUG[0;39m [35m5589[0;39m [2m--- [semantic-search] [0.0-5000-exec-3] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Generated embedding with dimension: 384
+[2m2026-05-03T08:34:10.330Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [0.0-5000-exec-3] [0;39m[36mc.e.demo.repository.PineconeRepository  [0;39m [2m:[0;39m Successfully upserted vector with ID: 8669256b-6f2b-49e8-a593-638354e69407
+[2m2026-05-03T08:34:10.331Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [0.0-5000-exec-3] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Successfully added document with ID: 8669256b-6f2b-49e8-a593-638354e69407
+[2m2026-05-03T08:34:25.575Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [0.0-5000-exec-7] [0;39m[36mc.e.demo.controller.SearchController    [0;39m [2m:[0;39m Received ask request
+[2m2026-05-03T08:34:25.575Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [0.0-5000-exec-7] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Top-3 search for query: what is constructure
+[2m2026-05-03T08:34:25.579Z[0;39m [32mDEBUG[0;39m [35m5589[0;39m [2m--- [semantic-search] [0.0-5000-exec-7] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Generated embedding with dimension: 384
+[2m2026-05-03T08:35:29.989Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [0.0-5000-exec-8] [0;39m[36mc.e.demo.controller.SearchController    [0;39m [2m:[0;39m Received ask request
+[2m2026-05-03T08:35:29.989Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [0.0-5000-exec-8] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Top-3 search for query: What framework helps build Java apps?
+[2m2026-05-03T08:35:29.993Z[0;39m [32mDEBUG[0;39m [35m5589[0;39m [2m--- [semantic-search] [0.0-5000-exec-8] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Generated embedding with dimension: 384
+[2m2026-05-03T08:35:33.165Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [.0-5000-exec-10] [0;39m[36mc.e.demo.controller.SearchController    [0;39m [2m:[0;39m Received ask request
+[2m2026-05-03T08:35:33.166Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [.0-5000-exec-10] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Top-3 search for query: tell me about python
+[2m2026-05-03T08:35:33.170Z[0;39m [32mDEBUG[0;39m [35m5589[0;39m [2m--- [semantic-search] [.0-5000-exec-10] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Generated embedding with dimension: 384
+[2m2026-05-03T08:36:06.693Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [ionShutdownHook] [0;39m[36mo.s.boot.tomcat.GracefulShutdown        [0;39m [2m:[0;39m Commencing graceful shutdown. Waiting for active requests to complete
+[2m2026-05-03T08:36:06.697Z[0;39m [32m INFO[0;39m [35m5589[0;39m [2m--- [semantic-search] [tomcat-shutdown] [0;39m[36mo.s.boot.tomcat.GracefulShutdown        [0;39m [2m:[0;39m Graceful shutdown complete

@@ -1,0 +1,16 @@
+target/
+.git/
+.idea/
+.vscode/
+*.iml
+.local/
+attached_assets/
+extracted/
+.replit
+replit.nix
+.cache/
+.config/
+.m2/
+*.log
+node_modules/
+.DS_Store

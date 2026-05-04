@@ -1,0 +1,40 @@
+[0m[0m
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+[32m :: Spring Boot :: [39m              [2m (v4.0.5)[0;39m
+
+[2m2026-05-03T10:50:01.282Z[0;39m [32m INFO[0;39m [35m2541[0;39m [2m--- [semantic-search] [           main] [0;39m[36mcom.example.demo.DemoApplication        [0;39m [2m:[0;39m Starting DemoApplication v0.0.1-SNAPSHOT using Java 21.0.7 with PID 2541 (/home/runner/workspace/target/demo-0.0.1-SNAPSHOT.jar started by runner in /home/runner/workspace)
+[2m2026-05-03T10:50:01.287Z[0;39m [32mDEBUG[0;39m [35m2541[0;39m [2m--- [semantic-search] [           main] [0;39m[36mcom.example.demo.DemoApplication        [0;39m [2m:[0;39m Running with Spring Boot v4.0.5, Spring v7.0.6
+[2m2026-05-03T10:50:01.288Z[0;39m [32m INFO[0;39m [35m2541[0;39m [2m--- [semantic-search] [           main] [0;39m[36mcom.example.demo.DemoApplication        [0;39m [2m:[0;39m No active profile set, falling back to 1 default profile: "default"
+[2m2026-05-03T10:50:02.118Z[0;39m [32m INFO[0;39m [35m2541[0;39m [2m--- [semantic-search] [           main] [0;39m[36mo.s.boot.tomcat.TomcatWebServer         [0;39m [2m:[0;39m Tomcat initialized with port 5000 (http)
+[2m2026-05-03T10:50:02.131Z[0;39m [32m INFO[0;39m [35m2541[0;39m [2m--- [semantic-search] [           main] [0;39m[36mo.apache.catalina.core.StandardService  [0;39m [2m:[0;39m Starting service [Tomcat]
+[2m2026-05-03T10:50:02.131Z[0;39m [32m INFO[0;39m [35m2541[0;39m [2m--- [semantic-search] [           main] [0;39m[36mo.apache.catalina.core.StandardEngine   [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/11.0.20]
+[2m2026-05-03T10:50:02.155Z[0;39m [32m INFO[0;39m [35m2541[0;39m [2m--- [semantic-search] [           main] [0;39m[36mb.w.c.s.WebApplicationContextInitializer[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 803 ms
+[2m2026-05-03T10:50:02.596Z[0;39m [32m INFO[0;39m [35m2541[0;39m [2m--- [semantic-search] [           main] [0;39m[36mai.djl.util.Platform                    [0;39m [2m:[0;39m Found matching platform from: jar:nested:/home/runner/workspace/target/demo-0.0.1-SNAPSHOT.jar/!BOOT-INF/lib/tokenizers-0.32.0.jar!/native/lib/tokenizers.properties
+[2m2026-05-03T10:50:02.992Z[0;39m [32m INFO[0;39m [35m2541[0;39m [2m--- [semantic-search] [           main] [0;39m[36mo.s.a.t.TransformersEmbeddingModel      [0;39m [2m:[0;39m Model input names: input_ids, attention_mask, token_type_ids
+[2m2026-05-03T10:50:02.992Z[0;39m [32m INFO[0;39m [35m2541[0;39m [2m--- [semantic-search] [           main] [0;39m[36mo.s.a.t.TransformersEmbeddingModel      [0;39m [2m:[0;39m Model output names: last_hidden_state
+[2m2026-05-03T10:50:03.029Z[0;39m [32m INFO[0;39m [35m2541[0;39m [2m--- [semantic-search] [           main] [0;39m[36mo.s.b.w.a.WelcomePageHandlerMapping     [0;39m [2m:[0;39m Adding welcome page: class path resource [static/index.html]
+[2m2026-05-03T10:50:03.375Z[0;39m [32m INFO[0;39m [35m2541[0;39m [2m--- [semantic-search] [           main] [0;39m[36mo.s.boot.tomcat.TomcatWebServer         [0;39m [2m:[0;39m Tomcat started on port 5000 (http) with context path '/'
+[2m2026-05-03T10:50:03.389Z[0;39m [32m INFO[0;39m [35m2541[0;39m [2m--- [semantic-search] [           main] [0;39m[36mcom.example.demo.DemoApplication        [0;39m [2m:[0;39m Started DemoApplication in 2.506 seconds (process running for 3.067)
+[2m2026-05-03T10:50:04.045Z[0;39m [32m INFO[0;39m [35m2541[0;39m [2m--- [semantic-search] [0.0-5000-exec-1] [0;39m[36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2m2026-05-03T10:50:04.045Z[0;39m [32m INFO[0;39m [35m2541[0;39m [2m--- [semantic-search] [0.0-5000-exec-1] [0;39m[36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
+[2m2026-05-03T10:50:04.047Z[0;39m [32m INFO[0;39m [35m2541[0;39m [2m--- [semantic-search] [0.0-5000-exec-1] [0;39m[36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 1 ms
+[2m2026-05-03T10:50:11.466Z[0;39m [32m INFO[0;39m [35m2541[0;39m [2m--- [semantic-search] [0.0-5000-exec-4] [0;39m[36mc.e.demo.controller.SearchController    [0;39m [2m:[0;39m Received ask request
+[2m2026-05-03T10:50:11.467Z[0;39m [32m INFO[0;39m [35m2541[0;39m [2m--- [semantic-search] [0.0-5000-exec-4] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Top-3 search for query: What can I use to store vectors?
+[2m2026-05-03T10:50:11.892Z[0;39m [32m INFO[0;39m [35m2541[0;39m [2m--- [semantic-search] [0.0-5000-exec-4] [0;39m[36mai.djl.pytorch.engine.PtEngine          [0;39m [2m:[0;39m PyTorch graph executor optimizer is enabled, this may impact your inference latency and throughput. See: https://docs.djl.ai/master/docs/development/inference_performance_optimization.html#graph-executor-optimization
+[2m2026-05-03T10:50:11.894Z[0;39m [32m INFO[0;39m [35m2541[0;39m [2m--- [semantic-search] [0.0-5000-exec-4] [0;39m[36mai.djl.pytorch.engine.PtEngine          [0;39m [2m:[0;39m Number of inter-op threads is 4
+[2m2026-05-03T10:50:11.895Z[0;39m [32m INFO[0;39m [35m2541[0;39m [2m--- [semantic-search] [0.0-5000-exec-4] [0;39m[36mai.djl.pytorch.engine.PtEngine          [0;39m [2m:[0;39m Number of intra-op threads is 4
+[2m2026-05-03T10:50:11.922Z[0;39m [32mDEBUG[0;39m [35m2541[0;39m [2m--- [semantic-search] [0.0-5000-exec-4] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Generated embedding with dimension: 384
+[2m2026-05-03T10:53:47.341Z[0;39m [32m INFO[0;39m [35m2541[0;39m [2m--- [semantic-search] [0.0-5000-exec-7] [0;39m[36mc.e.demo.controller.SearchController    [0;39m [2m:[0;39m Received ask request
+[2m2026-05-03T10:53:47.341Z[0;39m [32m INFO[0;39m [35m2541[0;39m [2m--- [semantic-search] [0.0-5000-exec-7] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Top-3 search for query: java
+[2m2026-05-03T10:53:47.345Z[0;39m [32mDEBUG[0;39m [35m2541[0;39m [2m--- [semantic-search] [0.0-5000-exec-7] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Generated embedding with dimension: 384
+[2m2026-05-03T11:01:22.404Z[0;39m [32m INFO[0;39m [35m2541[0;39m [2m--- [semantic-search] [0.0-5000-exec-1] [0;39m[36mc.e.demo.controller.SearchController    [0;39m [2m:[0;39m Received ask request
+[2m2026-05-03T11:01:22.404Z[0;39m [32m INFO[0;39m [35m2541[0;39m [2m--- [semantic-search] [0.0-5000-exec-1] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Top-3 search for query: java
+[2m2026-05-03T11:01:22.410Z[0;39m [32mDEBUG[0;39m [35m2541[0;39m [2m--- [semantic-search] [0.0-5000-exec-1] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Generated embedding with dimension: 384
+[2m2026-05-03T11:38:47.617Z[0;39m [32m INFO[0;39m [35m2541[0;39m [2m--- [semantic-search] [ionShutdownHook] [0;39m[36mo.s.boot.tomcat.GracefulShutdown        [0;39m [2m:[0;39m Commencing graceful shutdown. Waiting for active requests to complete
+[2m2026-05-03T11:38:47.621Z[0;39m [32m INFO[0;39m [35m2541[0;39m [2m--- [semantic-search] [tomcat-shutdown] [0;39m[36mo.s.boot.tomcat.GracefulShutdown        [0;39m [2m:[0;39m Graceful shutdown complete

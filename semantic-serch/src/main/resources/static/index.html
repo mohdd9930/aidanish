@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Semantic Search</title>
+    <style>
+      :root {
+        --bg: #0f172a;
+        --panel: #1e293b;
+        --panel-2: #111827;
+        --border: #334155;
+        --text: #e2e8f0;
+        --muted: #94a3b8;
+        --accent: #6366f1;
+        --accent-hover: #4f46e5;
+        --success: #10b981;
+        --error: #ef4444;
+      }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+      header { padding: 28px 24px 12px; text-align: center; }
+      header h1 { margin: 0 0 6px; font-size: 28px; }
+      header p { margin: 0; color: var(--muted); font-size: 14px; }
+      main { max-width: 1180px; margin: 0 auto; padding: 24px; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
+      @media (max-width: 980px) { main { grid-template-columns: 1fr; } }
+      input[type=file] { display: block; width: 100%; padding: 8px; border-radius: 8px; border: 1px solid var(--border); background: var(--panel-2); color: var(--text); font-size: 13px; }
+      input[type=file]::file-selector-button { margin-right: 10px; padding: 6px 12px; background: var(--accent); color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; }
+      input[type=file]::file-selector-button:hover { background: var(--accent-hover); }
+      .toast { position: fixed; top: 24px; left: 50%; transform: translateX(-50%) translateY(-20px); background: #16a34a; color: white; padding: 12px 20px; border-radius: 8px; box-shadow: 0 6px 20px rgba(0,0,0,0.3); font-size: 14px; font-weight: 600; opacity: 0; transition: opacity 0.25s ease, transform 0.25s ease; pointer-events: none; z-index: 1000; max-width: 90%; }
+      .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+      .toast.error { background: #dc2626; }
+      .card { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+      .card h2 { margin: 0 0 12px; font-size: 18px; }
+      .card p.hint { margin: 0 0 12px; color: var(--muted); font-size: 13px; }
+      textarea { width: 100%; min-height: 110px; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--border); background: var(--panel-2); color: var(--text); font-size: 14px; resize: vertical; font-family: inherit; }
+      textarea:focus { outline: none; border-color: var(--accent); }
+      button { margin-top: 12px; padding: 10px 16px; background: var(--accent); color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 14px; font-weight: 600; transition: background 0.15s; }
+      button:hover:not(:disabled) { background: var(--accent-hover); }
+      button:disabled { opacity: 0.6; cursor: not-allowed; }
+      .result { margin-top: 14px; padding: 12px; border-radius: 8px; background: var(--panel-2); border: 1px solid var(--border); font-size: 14px; min-height: 20px; white-space: pre-wrap; word-break: break-word; }
+      .result.success { border-color: var(--success); }
+      .result.error { border-color: var(--error); color: #fecaca; }
+      .result .label { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px; }
+      .row { display: flex; align-items: center; gap: 8px; }
+      .badge { display: inline-block; padding: 2px 8px; background: var(--panel-2); border: 1px solid var(--border); border-radius: 999px; font-size: 12px; color: var(--muted); }
+      footer { text-align: center; padding: 16px; color: var(--muted); font-size: 12px; }
+      code { background: var(--panel-2); padding: 1px 6px; border-radius: 4px; font-size: 12px; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Sarch in docs</h1>
+      <p>Spring Boot + local ONNX embeddings + Pinecone vector database + BM25</p>
+    </header>
+    <main>
+      <section class="card">
+        <h2>Add Document</h2>
+        <p class="hint">Paste text. A local ONNX embedding is generated and stored in Pinecone.</p>
+        <textarea id="addText" placeholder="e.g. Spring Boot simplifies Java enterprise development"></textarea>
+        <button id="addBtn">Add to index</button>
+        <div id="addResult" class="result" style="display:none"></div>
+      </section>
+
+      <section class="card">
+        <h2>Upload File</h2>
+        <p class="hint">Upload a <strong>PDF, TXT, DOC, DOCX, RTF</strong> or HTML file. Text is extracted, split into chunks, and indexed.</p>
+        <input id="uploadFile" type="file" accept=".pdf,.txt,.doc,.docx,.rtf,.odt,.html,.htm,.md,application/pdf,text/plain,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+        <button id="uploadBtn">Upload &amp; index</button>
+      </section>
+      <div id="toast" class="toast"></div>
+
+      <section class="card">
+        <h2>Ask a question</h2>
+        <p class="hint">Gemini reads the most relevant indexed documents and writes an answer.</p>
+        <textarea id="searchText" placeholder="e.g. What framework helps build Java apps?"></textarea>
+        <button id="searchBtn">Ask</button>
+        <div id="searchResult" class="result" style="display:none"></div>
+      </section>
+    </main>
+    <footer>
+      API: <code>POST /api/upload</code> &nbsp;·&nbsp; <code>POST /api/add</code> &nbsp;·&nbsp; <code>POST /api/ask</code> &nbsp;·&nbsp; <code>POST /api/search</code>
+    </footer>
+
+    <script>
+      const $ = (id) => document.getElementById(id);
+
+      async function callApi(path, text) {
+        const res = await fetch(path, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ text }),
+        });
+        const data = await res.json().catch(() => ({}));
+        return { ok: res.ok, status: res.status, data };
+      }
+
+      function show(el, html, kind) {
+        el.style.display = "block";
+        el.className = "result" + (kind ? " " + kind : "");
+        el.innerHTML = html;
+      }
+
+      let toastTimer = null;
+      function toast(message, kind) {
+        const el = $("toast");
+        el.textContent = message;
+        el.className = "toast show" + (kind === "error" ? " error" : "");
+        if (toastTimer) clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => { el.className = "toast" + (kind === "error" ? " error" : ""); }, 3000);
+      }
+
+      $("uploadBtn").addEventListener("click", async () => {
+        const fileInput = $("uploadFile");
+        const file = fileInput.files && fileInput.files[0];
+        if (!file) return toast("Please choose a file first.", "error");
+        const btn = $("uploadBtn");
+        btn.disabled = true; btn.textContent = "Uploading…";
+        try {
+          const fd = new FormData();
+          fd.append("file", file);
+          const res = await fetch("/api/upload", { method: "POST", body: fd });
+          const data = await res.json().catch(() => ({}));
+          if (res.ok) {
+            toast(`Indexed “${data.filename}” — ${data.chunks} chunk${data.chunks === 1 ? "" : "s"}`);
+            fileInput.value = "";
+          } else {
+            toast("Error: " + (data.error || "Upload failed"), "error");
+          }
+        } catch (e) {
+          toast("Network error: " + e.message, "error");
+        } finally {
+          btn.disabled = false; btn.textContent = "Upload & index";
+        }
+      });
+
+      $("addBtn").addEventListener("click", async () => {
+        const text = $("addText").value.trim();
+        if (!text) return show($("addResult"), "Please enter some text first.", "error");
+        const btn = $("addBtn");
+        btn.disabled = true; btn.textContent = "Adding…";
+        try {
+          const { ok, data } = await callApi("/api/add", text);
+          if (ok) {
+            show($("addResult"),
+              `<div class="label">Indexed</div><div class="row"><span class="badge">id</span><code>${data.documentId || ""}</code></div><div style="margin-top:8px">${escapeHtml(data.text || text)}</div>`,
+              "success");
+          } else {
+            show($("addResult"), "Error: " + (data.error || "Unknown error"), "error");
+          }
+        } catch (e) {
+          show($("addResult"), "Network error: " + e.message, "error");
+        } finally {
+          btn.disabled = false; btn.textContent = "Add to index";
+        }
+      });
+
+      $("searchBtn").addEventListener("click", async () => {
+        const text = $("searchText").value.trim();
+        if (!text) return show($("searchResult"), "Please enter a question first.", "error");
+        const btn = $("searchBtn");
+        btn.disabled = true; btn.textContent = "Thinking…";
+        try {
+          const { ok, status, data } = await callApi("/api/ask", text);
+          if (ok) {
+            const sources = (data.sources || []).map((s, i) => {
+              const fn = s.filename ? `<span class="badge">${escapeHtml(s.filename)}</span> ` : "";
+              const snippet = (s.text || "").length > 240 ? (s.text || "").slice(0, 240) + "…" : (s.text || "");
+              return `<div style="margin-top:6px"><span class="badge">${i + 1} · ${Number(s.score).toFixed(3)}</span> ${fn}${escapeHtml(snippet)}</div>`;
+            }).join("");
+            const sourcesBlock = sources
+              ? `<details style="margin-top:14px"><summary style="cursor:pointer;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:0.05em">Show sources (${(data.sources || []).length})</summary><div style="margin-top:8px">${sources}</div></details>`
+              : "";
+            show($("searchResult"),
+              `<div class="label">Answer</div><div>${escapeHtml(data.answer || "")}</div>${sourcesBlock}`,
+              "success");
+          } else {
+            show($("searchResult"), "Error: " + (data.error || "Unknown error"), "error");
+          }
+        } catch (e) {
+          show($("searchResult"), "Network error: " + e.message, "error");
+        } finally {
+          btn.disabled = false; btn.textContent = "Ask";
+        }
+      });
+
+      function escapeHtml(s) {
+        return String(s).replace(/[&<>"']/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
+      }
+    </script>
+  </body>
+</html>

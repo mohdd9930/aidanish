@@ -1,0 +1,168 @@
+[0m[0m
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+[32m :: Spring Boot :: [39m              [2m (v4.0.5)[0;39m
+
+[2m2026-05-03T10:05:00.564Z[0;39m [32m INFO[0;39m [35m84[0;39m [2m--- [semantic-search] [           main] [0;39m[36mcom.example.demo.DemoApplication        [0;39m [2m:[0;39m Starting DemoApplication v0.0.1-SNAPSHOT using Java 21.0.7 with PID 84 (/home/runner/workspace/target/demo-0.0.1-SNAPSHOT.jar started by runner in /home/runner/workspace)
+[2m2026-05-03T10:05:00.568Z[0;39m [32mDEBUG[0;39m [35m84[0;39m [2m--- [semantic-search] [           main] [0;39m[36mcom.example.demo.DemoApplication        [0;39m [2m:[0;39m Running with Spring Boot v4.0.5, Spring v7.0.6
+[2m2026-05-03T10:05:00.569Z[0;39m [32m INFO[0;39m [35m84[0;39m [2m--- [semantic-search] [           main] [0;39m[36mcom.example.demo.DemoApplication        [0;39m [2m:[0;39m No active profile set, falling back to 1 default profile: "default"
+[2m2026-05-03T10:05:01.480Z[0;39m [32m INFO[0;39m [35m84[0;39m [2m--- [semantic-search] [           main] [0;39m[36mo.s.boot.tomcat.TomcatWebServer         [0;39m [2m:[0;39m Tomcat initialized with port 5000 (http)
+[2m2026-05-03T10:05:01.502Z[0;39m [32m INFO[0;39m [35m84[0;39m [2m--- [semantic-search] [           main] [0;39m[36mo.apache.catalina.core.StandardService  [0;39m [2m:[0;39m Starting service [Tomcat]
+[2m2026-05-03T10:05:01.502Z[0;39m [32m INFO[0;39m [35m84[0;39m [2m--- [semantic-search] [           main] [0;39m[36mo.apache.catalina.core.StandardEngine   [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/11.0.20]
+[2m2026-05-03T10:05:01.529Z[0;39m [32m INFO[0;39m [35m84[0;39m [2m--- [semantic-search] [           main] [0;39m[36mb.w.c.s.WebApplicationContextInitializer[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 903 ms
+[2m2026-05-03T10:05:01.926Z[0;39m [32m INFO[0;39m [35m84[0;39m [2m--- [semantic-search] [           main] [0;39m[36mo.s.a.transformers.ResourceCacheService [0;39m [2m:[0;39m Create cache root directory: /tmp/spring-ai-onnx-generative
+[2m2026-05-03T10:05:02.910Z[0;39m [32m INFO[0;39m [35m84[0;39m [2m--- [semantic-search] [           main] [0;39m[36mo.s.a.transformers.ResourceCacheService [0;39m [2m:[0;39m Caching the URL [https://raw.githubusercontent.com/spring-projects/spring-ai/main/models/spring-ai-transformers/src/main/resources/onnx/all-MiniLM-L6-v2/tokenizer.json] resource to: /tmp/spring-ai-onnx-generative/4d42ba07-cb22-352f-bb44-beccc8c8c0b7/tokenizer.json
+[2m2026-05-03T10:05:03.032Z[0;39m [32m INFO[0;39m [35m84[0;39m [2m--- [semantic-search] [           main] [0;39m[36mai.djl.util.Platform                    [0;39m [2m:[0;39m Found matching platform from: jar:nested:/home/runner/workspace/target/demo-0.0.1-SNAPSHOT.jar/!BOOT-INF/lib/tokenizers-0.32.0.jar!/native/lib/tokenizers.properties
+[2m2026-05-03T10:05:03.035Z[0;39m [32m INFO[0;39m [35m84[0;39m [2m--- [semantic-search] [           main] [0;39m[36ma.d.huggingface.tokenizers.jni.LibUtils [0;39m [2m:[0;39m Extracting native/lib/linux-x86_64/cpu/libtokenizers.so to cache ...
+[2m2026-05-03T10:05:11.170Z[0;39m [32m INFO[0;39m [35m84[0;39m [2m--- [semantic-search] [           main] [0;39m[36mo.s.a.transformers.ResourceCacheService [0;39m [2m:[0;39m Caching the URL [https://media.githubusercontent.com/media/spring-projects/spring-ai/refs/heads/main/models/spring-ai-transformers/src/main/resources/onnx/all-MiniLM-L6-v2/model.onnx] resource to: /tmp/spring-ai-onnx-generative/d5769837-23ea-3f7c-a3e3-ded3412df4f4/model.onnx
+[2m2026-05-03T10:05:11.549Z[0;39m [32m INFO[0;39m [35m84[0;39m [2m--- [semantic-search] [           main] [0;39m[36mo.s.a.t.TransformersEmbeddingModel      [0;39m [2m:[0;39m Model input names: input_ids, attention_mask, token_type_ids
+[2m2026-05-03T10:05:11.550Z[0;39m [32m INFO[0;39m [35m84[0;39m [2m--- [semantic-search] [           main] [0;39m[36mo.s.a.t.TransformersEmbeddingModel      [0;39m [2m:[0;39m Model output names: last_hidden_state
+[2m2026-05-03T10:05:11.585Z[0;39m [32m INFO[0;39m [35m84[0;39m [2m--- [semantic-search] [           main] [0;39m[36mo.s.b.w.a.WelcomePageHandlerMapping     [0;39m [2m:[0;39m Adding welcome page: class path resource [static/index.html]
+[2m2026-05-03T10:05:11.977Z[0;39m [32m INFO[0;39m [35m84[0;39m [2m--- [semantic-search] [           main] [0;39m[36mo.s.boot.tomcat.TomcatWebServer         [0;39m [2m:[0;39m Tomcat started on port 5000 (http) with context path '/'
+[2m2026-05-03T10:05:12.020Z[0;39m [32m INFO[0;39m [35m84[0;39m [2m--- [semantic-search] [           main] [0;39m[36mcom.example.demo.DemoApplication        [0;39m [2m:[0;39m Started DemoApplication in 11.876 seconds (process running for 13.364)
+[2m2026-05-03T10:05:12.418Z[0;39m [32m INFO[0;39m [35m84[0;39m [2m--- [semantic-search] [0.0-5000-exec-1] [0;39m[36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2m2026-05-03T10:05:12.419Z[0;39m [32m INFO[0;39m [35m84[0;39m [2m--- [semantic-search] [0.0-5000-exec-1] [0;39m[36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
+[2m2026-05-03T10:05:12.420Z[0;39m [32m INFO[0;39m [35m84[0;39m [2m--- [semantic-search] [0.0-5000-exec-1] [0;39m[36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 1 ms
+[2m2026-05-03T10:05:26.023Z[0;39m [32m INFO[0;39m [35m84[0;39m [2m--- [semantic-search] [0.0-5000-exec-2] [0;39m[36mc.e.demo.controller.SearchController    [0;39m [2m:[0;39m Received ask request
+[2m2026-05-03T10:05:26.023Z[0;39m [32m INFO[0;39m [35m84[0;39m [2m--- [semantic-search] [0.0-5000-exec-2] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Top-3 search for query: what is java
+[2m2026-05-03T10:05:26.180Z[0;39m [32m INFO[0;39m [35m84[0;39m [2m--- [semantic-search] [0.0-5000-exec-2] [0;39m[36mai.djl.pytorch.jni.LibUtils             [0;39m [2m:[0;39m Downloading https://publish.djl.ai/pytorch/2.5.1/cpu/linux-x86_64/native/lib/libc10.so.gz ...
+[2m2026-05-03T10:05:26.228Z[0;39m [32m INFO[0;39m [35m84[0;39m [2m--- [semantic-search] [0.0-5000-exec-2] [0;39m[36mai.djl.pytorch.jni.LibUtils             [0;39m [2m:[0;39m Downloading https://publish.djl.ai/pytorch/2.5.1/cpu/linux-x86_64/native/lib/libtorch_cpu.so.gz ...
+[2m2026-05-03T10:05:30.965Z[0;39m [32m INFO[0;39m [35m84[0;39m [2m--- [semantic-search] [0.0-5000-exec-2] [0;39m[36mai.djl.pytorch.jni.LibUtils             [0;39m [2m:[0;39m Downloading https://publish.djl.ai/pytorch/2.5.1/cpu/linux-x86_64/native/lib/libgomp-98b21ff3.so.1.gz ...
+[2m2026-05-03T10:05:30.977Z[0;39m [32m INFO[0;39m [35m84[0;39m [2m--- [semantic-search] [0.0-5000-exec-2] [0;39m[36mai.djl.pytorch.jni.LibUtils             [0;39m [2m:[0;39m Downloading https://publish.djl.ai/pytorch/2.5.1/cpu/linux-x86_64/native/lib/libtorch.so.gz ...
+[2m2026-05-03T10:05:31.485Z[0;39m [32m INFO[0;39m [35m84[0;39m [2m--- [semantic-search] [0.0-5000-exec-2] [0;39m[36mai.djl.pytorch.jni.LibUtils             [0;39m [2m:[0;39m Downloading jni https://publish.djl.ai/pytorch/2.5.1/jnilib/0.32.0/linux-x86_64/cpu/libdjl_torch.so to cache ...
+[2m2026-05-03T10:05:31.542Z[0;39m [32m INFO[0;39m [35m84[0;39m [2m--- [semantic-search] [0.0-5000-exec-2] [0;39m[36mai.djl.pytorch.engine.PtEngine          [0;39m [2m:[0;39m PyTorch graph executor optimizer is enabled, this may impact your inference latency and throughput. See: https://docs.djl.ai/master/docs/development/inference_performance_optimization.html#graph-executor-optimization
+[2m2026-05-03T10:05:31.546Z[0;39m [32m INFO[0;39m [35m84[0;39m [2m--- [semantic-search] [0.0-5000-exec-2] [0;39m[36mai.djl.pytorch.engine.PtEngine          [0;39m [2m:[0;39m Number of inter-op threads is 4
+[2m2026-05-03T10:05:31.549Z[0;39m [32m INFO[0;39m [35m84[0;39m [2m--- [semantic-search] [0.0-5000-exec-2] [0;39m[36mai.djl.pytorch.engine.PtEngine          [0;39m [2m:[0;39m Number of intra-op threads is 4
+[2m2026-05-03T10:05:31.620Z[0;39m [32mDEBUG[0;39m [35m84[0;39m [2m--- [semantic-search] [0.0-5000-exec-2] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Generated embedding with dimension: 384
+[2m2026-05-03T10:05:55.731Z[0;39m [32m INFO[0;39m [35m84[0;39m [2m--- [semantic-search] [0.0-5000-exec-3] [0;39m[36mc.e.demo.controller.SearchController    [0;39m [2m:[0;39m Received ask request
+[2m2026-05-03T10:05:55.732Z[0;39m [32m INFO[0;39m [35m84[0;39m [2m--- [semantic-search] [0.0-5000-exec-3] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Top-3 search for query: why we use java
+[2m2026-05-03T10:05:55.937Z[0;39m [32mDEBUG[0;39m [35m84[0;39m [2m--- [semantic-search] [0.0-5000-exec-3] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Generated embedding with dimension: 384
+[2m2026-05-03T10:05:57.088Z[0;39m [33m WARN[0;39m [35m84[0;39m [2m--- [semantic-search] [0.0-5000-exec-3] [0;39m[36mcom.example.demo.service.GeminiClient   [0;39m [2m:[0;39m Gemini quota exceeded (429) for model=gemini-flash-latest
+[2m2026-05-03T10:05:57.089Z[0;39m [31mERROR[0;39m [35m84[0;39m [2m--- [semantic-search] [0.0-5000-exec-3] [0;39m[36mc.e.demo.controller.SearchController    [0;39m [2m:[0;39m Gemini failure during /api/ask: Gemini free-tier quota reached. Please wait ~1 minute and try again.
+[2m2026-05-03T10:17:10.984Z[0;39m [32m INFO[0;39m [35m84[0;39m [2m--- [semantic-search] [0.0-5000-exec-7] [0;39m[36mc.e.demo.controller.SearchController    [0;39m [2m:[0;39m Received ask request
+[2m2026-05-03T10:17:10.984Z[0;39m [32m INFO[0;39m [35m84[0;39m [2m--- [semantic-search] [0.0-5000-exec-7] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Top-3 search for query: why we use java
+[2m2026-05-03T10:17:12.228Z[0;39m [32mDEBUG[0;39m [35m84[0;39m [2m--- [semantic-search] [0.0-5000-exec-7] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Generated embedding with dimension: 384
+[2m2026-05-03T10:17:13.893Z[0;39m [33m WARN[0;39m [35m84[0;39m [2m--- [semantic-search] [0.0-5000-exec-7] [0;39m[36mcom.example.demo.service.GeminiClient   [0;39m [2m:[0;39m Gemini quota exceeded (429) for model=gemini-flash-latest
+[2m2026-05-03T10:17:13.894Z[0;39m [31mERROR[0;39m [35m84[0;39m [2m--- [semantic-search] [0.0-5000-exec-7] [0;39m[36mc.e.demo.controller.SearchController    [0;39m [2m:[0;39m Gemini failure during /api/ask: Gemini free-tier quota reached. Please wait ~1 minute and try again.
+[2m2026-05-03T10:19:15.569Z[0;39m [32m INFO[0;39m [35m84[0;39m [2m--- [semantic-search] [0.0-5000-exec-6] [0;39m[36mc.e.demo.controller.SearchController    [0;39m [2m:[0;39m Received ask request
+[2m2026-05-03T10:19:15.570Z[0;39m [32m INFO[0;39m [35m84[0;39m [2m--- [semantic-search] [0.0-5000-exec-6] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Top-3 search for query: why usw java
+[2m2026-05-03T10:19:15.573Z[0;39m [32mDEBUG[0;39m [35m84[0;39m [2m--- [semantic-search] [0.0-5000-exec-6] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Generated embedding with dimension: 384
+[2m2026-05-03T10:19:16.669Z[0;39m [33m WARN[0;39m [35m84[0;39m [2m--- [semantic-search] [0.0-5000-exec-6] [0;39m[36mcom.example.demo.service.GeminiClient   [0;39m [2m:[0;39m Gemini quota exceeded (429) for model=gemini-flash-latest
+[2m2026-05-03T10:19:16.669Z[0;39m [31mERROR[0;39m [35m84[0;39m [2m--- [semantic-search] [0.0-5000-exec-6] [0;39m[36mc.e.demo.controller.SearchController    [0;39m [2m:[0;39m Gemini failure during /api/ask: Gemini free-tier quota reached. Please wait ~1 minute and try again.
+[2m2026-05-03T10:44:52.961Z[0;39m [32m INFO[0;39m [35m84[0;39m [2m--- [semantic-search] [0.0-5000-exec-2] [0;39m[36mc.e.demo.controller.SearchController    [0;39m [2m:[0;39m Received ask request
+[2m2026-05-03T10:44:52.961Z[0;39m [32m INFO[0;39m [35m84[0;39m [2m--- [semantic-search] [0.0-5000-exec-2] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Top-3 search for query: what is java
+[2m2026-05-03T10:44:52.974Z[0;39m [32mDEBUG[0;39m [35m84[0;39m [2m--- [semantic-search] [0.0-5000-exec-2] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Generated embedding with dimension: 384
+[2m2026-05-03T10:44:53.671Z[0;39m [31mERROR[0;39m [35m84[0;39m [2m--- [semantic-search] [0.0-5000-exec-2] [0;39m[36mc.e.demo.repository.PineconeRepository  [0;39m [2m:[0;39m Error querying Pinecone (topK)
+
+org.springframework.web.client.HttpClientErrorException$Forbidden: 403 Forbidden on POST request for "https://semantic-384-1dsfvg7.svc.aped-4627-b74a.pinecone.io/query": "Forbidden"
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:112) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:144) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:119) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:807) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:756) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:677) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.client.RestTemplate.postForEntity(RestTemplate.java:430) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at com.example.demo.repository.PineconeRepository.queryTopK(PineconeRepository.java:96) ~[!/:0.0.1-SNAPSHOT]
+	at com.example.demo.service.SemanticSearchService.searchTopK(SemanticSearchService.java:97) ~[!/:0.0.1-SNAPSHOT]
+	at com.example.demo.controller.SearchController.ask(SearchController.java:138) ~[!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.20.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+[2m2026-05-03T10:44:53.876Z[0;39m [31mERROR[0;39m [35m84[0;39m [2m--- [semantic-search] [0.0-5000-exec-2] [0;39m[36mc.e.demo.controller.SearchController    [0;39m [2m:[0;39m Pinecone failure during /api/ask
+
+com.example.demo.repository.PineconeRepository$PineconeException: Failed to query vector store
+	at com.example.demo.repository.PineconeRepository.queryTopK(PineconeRepository.java:107) ~[!/:0.0.1-SNAPSHOT]
+	at com.example.demo.service.SemanticSearchService.searchTopK(SemanticSearchService.java:97) ~[!/:0.0.1-SNAPSHOT]
+	at com.example.demo.controller.SearchController.ask(SearchController.java:138) ~[!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.20.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+[2m2026-05-03T10:45:47.229Z[0;39m [32m INFO[0;39m [35m84[0;39m [2m--- [semantic-search] [ionShutdownHook] [0;39m[36mo.s.boot.tomcat.GracefulShutdown        [0;39m [2m:[0;39m Commencing graceful shutdown. Waiting for active requests to complete
+[2m2026-05-03T10:45:47.280Z[0;39m [32m INFO[0;39m [35m84[0;39m [2m--- [semantic-search] [tomcat-shutdown] [0;39m[36mo.s.boot.tomcat.GracefulShutdown        [0;39m [2m:[0;39m Graceful shutdown complete

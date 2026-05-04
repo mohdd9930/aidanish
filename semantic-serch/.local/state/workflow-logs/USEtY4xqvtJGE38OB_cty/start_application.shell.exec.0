@@ -1,0 +1,95 @@
+[0m[0m
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+[32m :: Spring Boot :: [39m              [2m (v4.0.5)[0;39m
+
+[2m2026-05-03T11:40:53.880Z[0;39m [32m INFO[0;39m [35m4346[0;39m [2m--- [           main] [0;39m[36mcom.example.demo.DemoApplication        [0;39m [2m:[0;39m Starting DemoApplication v0.0.1-SNAPSHOT using Java 21.0.7 with PID 4346 (/home/runner/workspace/target/demo-0.0.1-SNAPSHOT.jar started by runner in /home/runner/workspace)
+[2m2026-05-03T11:40:53.882Z[0;39m [32m INFO[0;39m [35m4346[0;39m [2m--- [           main] [0;39m[36mcom.example.demo.DemoApplication        [0;39m [2m:[0;39m No active profile set, falling back to 1 default profile: "default"
+[2m2026-05-03T11:40:54.883Z[0;39m [32m INFO[0;39m [35m4346[0;39m [2m--- [           main] [0;39m[36mo.s.boot.tomcat.TomcatWebServer         [0;39m [2m:[0;39m Tomcat initialized with port 5000 (http)
+[2m2026-05-03T11:40:54.896Z[0;39m [32m INFO[0;39m [35m4346[0;39m [2m--- [           main] [0;39m[36mo.apache.catalina.core.StandardService  [0;39m [2m:[0;39m Starting service [Tomcat]
+[2m2026-05-03T11:40:54.896Z[0;39m [32m INFO[0;39m [35m4346[0;39m [2m--- [           main] [0;39m[36mo.apache.catalina.core.StandardEngine   [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/11.0.20]
+[2m2026-05-03T11:40:54.924Z[0;39m [32m INFO[0;39m [35m4346[0;39m [2m--- [           main] [0;39m[36mb.w.c.s.WebApplicationContextInitializer[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 970 ms
+[2m2026-05-03T11:40:55.417Z[0;39m [32m INFO[0;39m [35m4346[0;39m [2m--- [           main] [0;39m[36mai.djl.util.Platform                    [0;39m [2m:[0;39m Found matching platform from: jar:nested:/home/runner/workspace/target/demo-0.0.1-SNAPSHOT.jar/!BOOT-INF/lib/tokenizers-0.32.0.jar!/native/lib/tokenizers.properties
+[2m2026-05-03T11:40:55.848Z[0;39m [32m INFO[0;39m [35m4346[0;39m [2m--- [           main] [0;39m[36mo.s.a.t.TransformersEmbeddingModel      [0;39m [2m:[0;39m Model input names: input_ids, attention_mask, token_type_ids
+[2m2026-05-03T11:40:55.848Z[0;39m [32m INFO[0;39m [35m4346[0;39m [2m--- [           main] [0;39m[36mo.s.a.t.TransformersEmbeddingModel      [0;39m [2m:[0;39m Model output names: last_hidden_state
+[2m2026-05-03T11:40:56.787Z[0;39m [32m INFO[0;39m [35m4346[0;39m [2m--- [           main] [0;39m[36mo.s.b.w.a.WelcomePageHandlerMapping     [0;39m [2m:[0;39m Adding welcome page: class path resource [static/index.html]
+[2m2026-05-03T11:40:57.162Z[0;39m [32m INFO[0;39m [35m4346[0;39m [2m--- [           main] [0;39m[36mo.s.boot.tomcat.TomcatWebServer         [0;39m [2m:[0;39m Tomcat started on port 5000 (http) with context path '/'
+[2m2026-05-03T11:40:57.177Z[0;39m [32m INFO[0;39m [35m4346[0;39m [2m--- [           main] [0;39m[36mcom.example.demo.DemoApplication        [0;39m [2m:[0;39m Started DemoApplication in 3.733 seconds (process running for 4.354)
+[2m2026-05-03T11:40:57.400Z[0;39m [32m INFO[0;39m [35m4346[0;39m [2m--- [0.0-5000-exec-1] [0;39m[36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2m2026-05-03T11:40:57.400Z[0;39m [32m INFO[0;39m [35m4346[0;39m [2m--- [0.0-5000-exec-1] [0;39m[36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
+[2m2026-05-03T11:40:57.401Z[0;39m [32m INFO[0;39m [35m4346[0;39m [2m--- [0.0-5000-exec-1] [0;39m[36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 1 ms
+[2m2026-05-03T11:41:12.170Z[0;39m [32m INFO[0;39m [35m4346[0;39m [2m--- [0.0-5000-exec-2] [0;39m[36mc.e.demo.controller.SearchController    [0;39m [2m:[0;39m Received upload: sample.txt (288 bytes)
+[2m2026-05-03T11:41:12.249Z[0;39m [32m INFO[0;39m [35m4346[0;39m [2m--- [0.0-5000-exec-2] [0;39m[36mc.e.demo.service.FileTextExtractor      [0;39m [2m:[0;39m Extracted 289 chars from 'sample.txt'
+[2m2026-05-03T11:41:12.249Z[0;39m [32m INFO[0;39m [35m4346[0;39m [2m--- [0.0-5000-exec-2] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Indexing 'sample.txt' as 1 chunks
+[2m2026-05-03T11:41:12.608Z[0;39m [32m INFO[0;39m [35m4346[0;39m [2m--- [0.0-5000-exec-2] [0;39m[36mai.djl.pytorch.engine.PtEngine          [0;39m [2m:[0;39m PyTorch graph executor optimizer is enabled, this may impact your inference latency and throughput. See: https://docs.djl.ai/master/docs/development/inference_performance_optimization.html#graph-executor-optimization
+[2m2026-05-03T11:41:12.610Z[0;39m [32m INFO[0;39m [35m4346[0;39m [2m--- [0.0-5000-exec-2] [0;39m[36mai.djl.pytorch.engine.PtEngine          [0;39m [2m:[0;39m Number of inter-op threads is 4
+[2m2026-05-03T11:41:12.610Z[0;39m [32m INFO[0;39m [35m4346[0;39m [2m--- [0.0-5000-exec-2] [0;39m[36mai.djl.pytorch.engine.PtEngine          [0;39m [2m:[0;39m Number of intra-op threads is 4
+[2m2026-05-03T11:41:13.946Z[0;39m [32m INFO[0;39m [35m4346[0;39m [2m--- [0.0-5000-exec-2] [0;39m[36mc.e.demo.repository.PineconeRepository  [0;39m [2m:[0;39m Successfully upserted vector with ID: e1bab31f-c0c2-49d7-9b15-5662d73263dd
+[2m2026-05-03T11:41:14.022Z[0;39m [32m INFO[0;39m [35m4346[0;39m [2m--- [0.0-5000-exec-4] [0;39m[36mc.e.demo.controller.SearchController    [0;39m [2m:[0;39m Received ask request
+[2m2026-05-03T11:41:14.022Z[0;39m [32m INFO[0;39m [35m4346[0;39m [2m--- [0.0-5000-exec-4] [0;39m[36mc.e.demo.service.SemanticSearchService  [0;39m [2m:[0;39m Top-3 search for query: What is Kafka used for?
+[2m2026-05-03T11:42:08.931Z[0;39m [32m INFO[0;39m [35m4346[0;39m [2m--- [0.0-5000-exec-7] [0;39m[36mc.e.demo.controller.SearchController    [0;39m [2m:[0;39m Received upload: niwas pramad11208_0001-3.pdf (378415 bytes)
+[2m2026-05-03T11:42:08.959Z[0;39m [31mERROR[0;39m [35m4346[0;39m [2m--- [0.0-5000-exec-7] [0;39m[36mo.a.c.c.C.[.[.[/].[dispatcherServlet]   [0;39m [2m:[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed: java.lang.NoSuchMethodError: 'org.apache.pdfbox.pdmodel.PDDocument org.apache.pdfbox.pdmodel.PDDocument.load(java.io.InputStream, java.lang.String, org.apache.pdfbox.io.MemoryUsageSetting)'] with root cause
+
+java.lang.NoSuchMethodError: 'org.apache.pdfbox.pdmodel.PDDocument org.apache.pdfbox.pdmodel.PDDocument.load(java.io.InputStream, java.lang.String, org.apache.pdfbox.io.MemoryUsageSetting)'
+	at org.apache.tika.parser.pdf.PDFParser.getPDDocument(PDFParser.java:498) ~[tika-parser-pdf-module-2.9.2.jar!/:2.9.2]
+	at org.apache.tika.parser.pdf.PDFParser.getPDDocument(PDFParser.java:477) ~[tika-parser-pdf-module-2.9.2.jar!/:2.9.2]
+	at org.apache.tika.parser.pdf.PDFParser.parse(PDFParser.java:191) ~[tika-parser-pdf-module-2.9.2.jar!/:2.9.2]
+	at org.apache.tika.parser.CompositeParser.parse(CompositeParser.java:298) ~[tika-core-2.9.2.jar!/:2.9.2]
+	at org.apache.tika.parser.CompositeParser.parse(CompositeParser.java:298) ~[tika-core-2.9.2.jar!/:2.9.2]
+	at org.apache.tika.parser.AutoDetectParser.parse(AutoDetectParser.java:203) ~[tika-core-2.9.2.jar!/:2.9.2]
+	at org.apache.tika.Tika.parseToString(Tika.java:525) ~[tika-core-2.9.2.jar!/:2.9.2]
+	at org.apache.tika.Tika.parseToString(Tika.java:495) ~[tika-core-2.9.2.jar!/:2.9.2]
+	at org.apache.tika.Tika.parseToString(Tika.java:557) ~[tika-core-2.9.2.jar!/:2.9.2]
+	at com.example.demo.service.FileTextExtractor.extract(FileTextExtractor.java:26) ~[!/:0.0.1-SNAPSHOT]
+	at com.example.demo.controller.SearchController.uploadFile(SearchController.java:71) ~[!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.6.jar!/:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.20.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar!/:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.20.jar!/:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+[2m2026-05-03T11:42:55.205Z[0;39m [32m INFO[0;39m [35m4346[0;39m [2m--- [ionShutdownHook] [0;39m[36mo.s.boot.tomcat.GracefulShutdown        [0;39m [2m:[0;39m Commencing graceful shutdown. Waiting for active requests to complete
+[2m2026-05-03T11:42:55.218Z[0;39m [32m INFO[0;39m [35m4346[0;39m [2m--- [tomcat-shutdown] [0;39m[36mo.s.boot.tomcat.GracefulShutdown        [0;39m [2m:[0;39m Graceful shutdown complete

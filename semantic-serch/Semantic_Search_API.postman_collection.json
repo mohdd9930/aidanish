@@ -1,0 +1,340 @@
+{
+  "info": {
+    "_postman_id": "semantic-search-api",
+    "name": "Semantic Search API",
+    "description": "Collection for testing Semantic Search Backend with Pinecone",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/health",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "health"
+          ]
+        },
+        "description": "Check if the service is running"
+      },
+      "response": []
+    },
+    {
+      "name": "Add Document - Example 1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"text\":\"Machine learning is a subset of artificial intelligence that focuses on the development of algorithms and statistical models that enable computers to improve their performance on tasks through experience.\"}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/add",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "add"
+          ]
+        },
+        "description": "Add a document about machine learning"
+      },
+      "response": []
+    },
+    {
+      "name": "Add Document - Example 2",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"text\":\"Deep learning uses artificial neural networks with multiple layers to model complex patterns in large amounts of data for image recognition, natural language processing, and speech recognition.\"}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/add",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "add"
+          ]
+        },
+        "description": "Add a document about deep learning"
+      },
+      "response": []
+    },
+    {
+      "name": "Add Document - Example 3",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"text\":\"Natural language processing is a branch of artificial intelligence that helps computers understand, interpret, and generate human language in a meaningful and useful way.\"}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/add",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "add"
+          ]
+        },
+        "description": "Add a document about natural language processing"
+      },
+      "response": []
+    },
+    {
+      "name": "Add Document - Example 4",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"text\":\"Computer vision is a field of artificial intelligence that trains computers to interpret and understand the visual world using digital images and videos.\"}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/add",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "add"
+          ]
+        },
+        "description": "Add a document about computer vision"
+      },
+      "response": []
+    },
+    {
+      "name": "Search - Query 1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"text\":\"What is AI and neural networks?\"}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/search",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "search"
+          ]
+        },
+        "description": "Search for documents about AI and neural networks"
+      },
+      "response": []
+    },
+    {
+      "name": "Search - Query 2",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"text\":\"How does language processing work?\"}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/search",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "search"
+          ]
+        },
+        "description": "Search for documents about language processing"
+      },
+      "response": []
+    },
+    {
+      "name": "Search - Query 3",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"text\":\"Image recognition and visual understanding\"}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/search",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "search"
+          ]
+        },
+        "description": "Search for documents about image recognition"
+      },
+      "response": []
+    },
+    {
+      "name": "Search - Query 4",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"text\":\"Learning from data and patterns\"}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/search",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "search"
+          ]
+        },
+        "description": "Search for documents about learning from data"
+      },
+      "response": []
+    },
+    {
+      "name": "Add Document - Custom",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"text\":\"Your custom text here\"}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/add",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "add"
+          ]
+        },
+        "description": "Template for adding custom documents"
+      },
+      "response": []
+    },
+    {
+      "name": "Search - Custom",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"text\":\"Your custom query here\"}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/search",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "search"
+          ]
+        },
+        "description": "Template for custom searches"
+      },
+      "response": []
+    }
+  ]
+}
