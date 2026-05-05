@@ -15,7 +15,7 @@ FROM eclipse-temurin:21-jre
 WORKDIR /app
 
 COPY --from=build /app/target/demo-0.0.1-SNAPSHOT.jar app.jar
-
+COPY src/main/resources/application.properties /app/src/main/resources/application.properties
 # Spring Boot listens on this port (matches application.properties)
 EXPOSE 5000
 
